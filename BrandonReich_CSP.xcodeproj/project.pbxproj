@@ -12,6 +12,13 @@
 		0370D3971FA21F6C003DC36B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0370D3951FA21F6C003DC36B /* Main.storyboard */; };
 		0370D3991FA21F6C003DC36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0370D3981FA21F6C003DC36B /* Assets.xcassets */; };
 		0370D39C1FA21F6C003DC36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0370D39A1FA21F6C003DC36B /* LaunchScreen.storyboard */; };
+		0370D3A81FA22312003DC36B /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3A71FA22312003DC36B /* CreativityViewController.swift */; };
+		0370D3AA1FA22333003DC36B /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3A91FA22333003DC36B /* AbstractionViewController.swift */; };
+		0370D3AC1FA22348003DC36B /* DataAndInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3AB1FA22348003DC36B /* DataAndInformationViewController.swift */; };
+		0370D3AE1FA2235D003DC36B /* AlgorithmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3AD1FA2235D003DC36B /* AlgorithmsViewController.swift */; };
+		0370D3B01FA2236C003DC36B /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */; };
+		0370D3B21FA2237B003DC36B /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B11FA2237B003DC36B /* InternetViewController.swift */; };
+		0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		0370D3981FA21F6C003DC36B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0370D39B1FA21F6C003DC36B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0370D39D1FA21F6C003DC36B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0370D3A71FA22312003DC36B /* CreativityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityViewController.swift; sourceTree = "<group>"; };
+		0370D3A91FA22333003DC36B /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
+		0370D3AB1FA22348003DC36B /* DataAndInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAndInformationViewController.swift; sourceTree = "<group>"; };
+		0370D3AD1FA2235D003DC36B /* AlgorithmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsViewController.swift; sourceTree = "<group>"; };
+		0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
+		0370D3B11FA2237B003DC36B /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,13 @@
 			children = (
 				0370D3911FA21F6C003DC36B /* AppDelegate.swift */,
 				0370D3931FA21F6C003DC36B /* ViewController.swift */,
+				0370D3A71FA22312003DC36B /* CreativityViewController.swift */,
+				0370D3A91FA22333003DC36B /* AbstractionViewController.swift */,
+				0370D3AB1FA22348003DC36B /* DataAndInformationViewController.swift */,
+				0370D3AD1FA2235D003DC36B /* AlgorithmsViewController.swift */,
+				0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */,
+				0370D3B11FA2237B003DC36B /* InternetViewController.swift */,
+				0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,7 +190,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0370D3941FA21F6C003DC36B /* ViewController.swift in Sources */,
+				0370D3B01FA2236C003DC36B /* ProgrammingViewController.swift in Sources */,
 				0370D3921FA21F6C003DC36B /* AppDelegate.swift in Sources */,
+				0370D3A81FA22312003DC36B /* CreativityViewController.swift in Sources */,
+				0370D3AC1FA22348003DC36B /* DataAndInformationViewController.swift in Sources */,
+				0370D3AE1FA2235D003DC36B /* AlgorithmsViewController.swift in Sources */,
+				0370D3AA1FA22333003DC36B /* AbstractionViewController.swift in Sources */,
+				0370D3B21FA2237B003DC36B /* InternetViewController.swift in Sources */,
+				0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
