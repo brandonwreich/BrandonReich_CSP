@@ -20,7 +20,7 @@ public class AlgorithmsViewController: UIViewController
         //TODO: Deine alogorithm and all steps
         let algorithm :String = "These are the instructions to create a project in Java using Eclipse and GitHub \n"
         let stepOne :String = "First, open Eclipse IED and select your workspace."
-        let stepTwo :String = "Second, Select File  New > Java Project on the menu bar and name the project and click 'Finish'. Then create a package and two Classes and enter the start methods into the Runner and Contoller classes."
+        let stepTwo :String = "Second, Select File  New > Java Project on the menu bar, name the project, and click 'Finish'. Then create packages and Classes and enter the start methods into the Runner and Controller classes."
         let stepThree :String =  "Next, open GitHub Desktop."
         let stepFour :String = "Select File > New Repository on the menu bar"
         let stepFive :String = "Type in your Java Project name EXACTLY into the repository name and click 'Create Repository'."
@@ -42,7 +42,8 @@ public class AlgorithmsViewController: UIViewController
             let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string : formattedStep)
             let paragraphStyle = createParagraphStyle()
             
-            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange (0, attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range:
+                NSMakeRange (0, attributedStringStep.length))
             
             fullAttributedString.append(attributedStringStep)
         }
@@ -61,7 +62,7 @@ public class AlgorithmsViewController: UIViewController
         return paragraphStyle
     }
     
-    override func viewDidLoad()
+    override public func viewDidLoad()
     {
         super.viewDidLoad()
         setupAlgorithm()
@@ -69,7 +70,7 @@ public class AlgorithmsViewController: UIViewController
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning()
+    override public func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
