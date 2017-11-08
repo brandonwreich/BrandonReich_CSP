@@ -36,6 +36,7 @@
 		0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
 		0370D3B11FA2237B003DC36B /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
 		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
+		03E187371FB351C8001F9E74 /* swiftSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swiftSample.png; path = ../../../../../Downloads/swiftSample.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0370D3981FA21F6C003DC36B /* Assets.xcassets */,
+				03E187371FB351C8001F9E74 /* swiftSample.png */,
 				0370D39D1FA21F6C003DC36B /* Info.plist */,
 			);
 			path = Resources;
