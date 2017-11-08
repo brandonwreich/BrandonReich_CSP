@@ -8,12 +8,63 @@
 
 import UIKit
 
-class AlgorithmsViewController: UIViewController
+public class AlgorithmsViewController: UIViewController
 {
-
+    // MARK: Data members
+    @IBOutlet weak var algorithmText: UILabel!
+    
+    private func setupAlgorithm() -> Void
+    {
+        var algorithmSteps : [String] = []
+        
+        //TODO: Deine alogorithm and all steps
+        let algorithm :String = "These are the instructions to create a project in Java using Eclipse and GitHub \n"
+        let stepOne :String = "First, open Eclipse IED and select your workspace."
+        let stepTwo :String = "Second, Select File  New > Java Project on the menu bar and name the project and click 'Finish'. Then create a package and two Classes and enter the start methods into the Runner and Contoller classes."
+        let stepThree :String =  "Next, open GitHub Desktop."
+        let stepFour :String = "Select File > New Repository on the menu bar"
+        let stepFive :String = "Type in your Java Project name EXACTLY into the repository name and click 'Create Repository'."
+        let stepSix :String = "Undo the intial commit and then select Repository > Repository Settings on the menu bar."
+        let stepSeven: String = "Edit the Ignored Files and enter 'bin', '*.class', and '.DS_Store' then click 'Save'. "
+        let stepEight :String = "Commit what you just did and click 'Commit to Master'."
+        let stepNine :String = "Click 'Publish Repository' and make sure the 'Keep this code private' check box is UNchecked."
+        let stepTen :String = "Click 'Publish Repository'."
+        
+        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen]
+        
+        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
+        
+        for step in algorithmSteps
+        {
+            let bullet :String = "🃏"
+            let formattedStep :String = "\n\(bullet) \(step)"
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string : formattedStep)
+            let paragraphStyle = createParagraphStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange (0, attributedStringStep.length))
+            
+            fullAttributedString.append(attributedStringStep)
+        }
+        
+        algorithmText.attributedText = fullAttributedString
+    }
+    
+    private func createParagraphStyle() -> NSParagraphStyle
+    {
+        let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .left
+        paragraphStyle.defaultTabInterval = 15
+        paragraphStyle.firstLineHeadIndent = 20
+        paragraphStyle.headIndent = 35
+        
+        return paragraphStyle
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        setupAlgorithm()
 
         // Do any additional setup after loading the view.
     }
