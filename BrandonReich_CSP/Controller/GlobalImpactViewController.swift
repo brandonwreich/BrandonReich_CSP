@@ -10,7 +10,10 @@ import UIKit
 
 class GlobalImpactViewController: UIViewController
 {
-
+    @IBOutlet weak var UIImageViewAIDS: UIImageView!
+    
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
