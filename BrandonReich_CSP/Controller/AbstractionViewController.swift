@@ -21,7 +21,7 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
             self.newAbstractionViewController(abstractionLevel: "AndGate")
         ]
     }()
-
+    
     //Helper method to retrieve the correct ViewController
     private func newAbstractionViewController(abstractionLevel: String) -> UIViewController
     {
@@ -41,8 +41,8 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
                                completion: nil)
         }
     }
-
-   override public func didReceiveMemoryWarning()
+    
+    override public func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,7 +52,7 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
-        else
+            else
         {
             return nil
         }
@@ -60,13 +60,13 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         let previousIndex = viewControllerIndex - 1
         
         guard previousIndex >= 0
-        else
+            else
         {
             return orderedAbstractionViews.last
         }
         
         guard orderedAbstractionViews.count > previousIndex
-        else
+            else
         {
             return nil
         }
@@ -77,7 +77,7 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
-        else
+            else
         {
             return nil
         }
@@ -85,13 +85,13 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         let nextIndex = viewControllerIndex + 1
         
         guard nextIndex >= 0
-        else
+            else
         {
             return nil
         }
         
         guard nextIndex < orderedAbstractionViews.count
-        else
+            else
         {
             return orderedAbstractionViews.first
         }
@@ -108,22 +108,22 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
     public func presentationIndex(for pageViewController: UIPageViewController) -> Int
     {
         guard let firstViewController = viewControllers?.first, let firstViewControllerIndex = orderedAbstractionViews.index(of: firstViewController)
-        else
+            else
         {
             return 0
         }
-    
+        
         return firstViewControllerIndex
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
