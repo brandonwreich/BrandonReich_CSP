@@ -40,8 +40,6 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
                                animated: true,
                                completion: nil)
         }
-
-        // Do any additional setup after loading the view.
     }
 
    override public func didReceiveMemoryWarning()
@@ -50,6 +48,56 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK:- Required Protocol methods for the UIPageViewControllerDataSource
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+        else
+        {
+            return nil
+        }
+        
+        let previousIndex = viewControllerIndex - 1
+        
+        guard previousIndex >= 0
+        else
+        {
+            return orderedAbstractionViews.last
+        }
+        
+        guard orderedAbstractionViews.count > previousIndex
+        else
+        {
+            return nil
+        }
+        
+        return orderedAbstractionViews[previousIndex]
+    }
+    
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+    {
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+        else
+        {
+            return nil
+        }
+        
+        let nextIndex = viewControllerIndex + 1
+        
+        guard nextIndex >= 0
+        else
+        {
+            return nil
+        }
+        
+        guard nextIndex < orderedAbstractionViews.count
+        else
+        {
+            return orderedAbstractionViews.first
+        }
+        
+        return orderedAbstractionViews[nextIndex]
+    }
 
     /*
     // MARK: - Navigation
