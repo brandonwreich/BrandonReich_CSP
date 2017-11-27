@@ -11,7 +11,7 @@ import UIKit
 public class AbstractionViewController: UIPageViewController, UIPageViewControllerDataSource
 {
     //MARK: Array of subviews
-    private (set) lazy var orderedAbstractionView : [UIViewController] =
+    private (set) lazy var orderedAbstractionViews : [UIViewController] =
     {
         return [
             self.newAbstractionViewController(abstractionLevel: "Block"),
@@ -21,19 +21,30 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
             self.newAbstractionViewController(abstractionLevel: "AndGate")
         ]
     }()
-   
+
+    //Helper method to retrieve the correct ViewController
     private func newAbstractionViewController(abstractionLevel: String) -> UIViewController
     {
-        
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
     }
-   public override func viewDidLoad()
+    
+    override public func viewDidLoad()
     {
         super.viewDidLoad()
+        dataSource = self
+        
+        if let firstViewController = orderedAbstractionViews.first
+        {
+            setViewControllers([firstViewController],
+                               direction: .forward,
+                               animated: true,
+                               completion: nil)
+        }
 
         // Do any additional setup after loading the view.
     }
 
-   public override func didReceiveMemoryWarning()
+   override public func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
