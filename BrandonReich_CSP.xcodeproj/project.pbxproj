@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034213591FC329E10047A979 /* Pushable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034213581FC329E10047A979 /* Pushable.swift */; };
+		0342135B1FC32B100047A979 /* Swing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342135A1FC32B100047A979 /* Swing.swift */; };
 		0370D3921FA21F6C003DC36B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3911FA21F6C003DC36B /* AppDelegate.swift */; };
 		0370D3941FA21F6C003DC36B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3931FA21F6C003DC36B /* ViewController.swift */; };
 		0370D3971FA21F6C003DC36B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0370D3951FA21F6C003DC36B /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034213581FC329E10047A979 /* Pushable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pushable.swift; sourceTree = "<group>"; };
+		0342135A1FC32B100047A979 /* Swing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swing.swift; sourceTree = "<group>"; };
 		0370D38E1FA21F6C003DC36B /* BrandonReich_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrandonReich_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0370D3911FA21F6C003DC36B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0370D3931FA21F6C003DC36B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +40,6 @@
 		0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
 		0370D3B11FA2237B003DC36B /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
 		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
-		03E187371FB351C8001F9E74 /* swiftSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swiftSample.png; path = ../../../../../Downloads/swiftSample.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				0370D3981FA21F6C003DC36B /* Assets.xcassets */,
-				03E187371FB351C8001F9E74 /* swiftSample.png */,
 				0370D39D1FA21F6C003DC36B /* Info.plist */,
 			);
 			path = Resources;
@@ -115,6 +117,8 @@
 		0370D3A61FA21FB6003DC36B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				034213581FC329E10047A979 /* Pushable.swift */,
+				0342135A1FC32B100047A979 /* Swing.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,8 +201,10 @@
 				0370D3A81FA22312003DC36B /* CreativityViewController.swift in Sources */,
 				0370D3AC1FA22348003DC36B /* DataAndInformationViewController.swift in Sources */,
 				0370D3AE1FA2235D003DC36B /* AlgorithmsViewController.swift in Sources */,
+				0342135B1FC32B100047A979 /* Swing.swift in Sources */,
 				0370D3AA1FA22333003DC36B /* AbstractionViewController.swift in Sources */,
 				0370D3B21FA2237B003DC36B /* InternetViewController.swift in Sources */,
+				034213591FC329E10047A979 /* Pushable.swift in Sources */,
 				0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
