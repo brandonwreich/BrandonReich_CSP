@@ -193,11 +193,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D94-ES-R4j">
-                                <rect key="frame" x="164" y="511" width="46" height="30"/>
+                                <rect key="frame" x="120" y="511" width="134" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Global Impact Page"/>
                                 <connections>
                                     <segue destination="QQ0-2V-74g" kind="show" id="es9-a6-Ip6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnF-SL-Qu9">
+                                <rect key="frame" x="128" y="453" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abstraction Page"/>
+                                <connections>
+                                    <segue destination="HLX-HT-fkj" kind="show" id="c0z-ph-2cF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vc-dl-41f">
+                                <rect key="frame" x="131" y="397" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Algorithms Page"/>
+                                <connections>
+                                    <segue destination="6eM-ge-4p0" kind="show" id="gPI-AX-rxf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,6 +325,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLk-DP-DQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1597.5999999999999" y="116.49175412293854"/>
+        </scene>
+        <!--Abstraction View Controller-->
+        <scene sceneID="43L-qn-mLq">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="HLX-HT-fkj" customClass="AbstractionViewController" customModule="BrandonReich_CSP" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2e-Bi-hx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377" y="116"/>
         </scene>
     </scenes>
     <resources>
