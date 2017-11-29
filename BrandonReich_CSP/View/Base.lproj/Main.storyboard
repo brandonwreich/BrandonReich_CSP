@@ -211,25 +211,43 @@
             </objects>
             <point key="canvasLocation" x="-79" y="-467"/>
         </scene>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="0iq-Gl-aIu">
             <objects>
-                <viewController id="cSc-ks-W8s" sceneMemberID="viewController">
+                <viewController id="cSc-ks-W8s" customClass="InternetDetailViewController" customModule="BrandonReich_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IrR-Gg-nVP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AeI-6y-3XG">
+                                <rect key="frame" x="39" y="411" width="295" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSb-OM-AJA">
+                                <rect key="frame" x="39" y="144" width="295" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="CnT-BR-gIZ"/>
                     </view>
+                    <connections>
+                        <outlet property="Label" destination="JSb-OM-AJA" id="c1b-I2-t2a"/>
+                        <outlet property="WebView" destination="AeI-6y-3XG" id="n9k-ZY-mSA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wg-9F-fZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2121" y="-510"/>
+            <point key="canvasLocation" x="2120.8000000000002" y="-510.49475262368821"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="BFW-Zh-GRn">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="aBN-0r-tZ9" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="aBN-0r-tZ9" customClass="InternetMasterViewController" customModule="BrandonReich_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4sn-1d-JSb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
