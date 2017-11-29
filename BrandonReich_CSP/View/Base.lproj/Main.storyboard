@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNX-Wj-V5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-345" y="-1280"/>
+            <point key="canvasLocation" x="1244" y="-1954"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -198,9 +198,6 @@
                                 <rect key="frame" x="132" y="393" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="HLX-HT-fkj" kind="show" id="Bek-qz-zYi"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -209,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112.8" y="116.49175412293854"/>
+            <point key="canvasLocation" x="574" y="-425"/>
         </scene>
         <!--Algorithms View Controller-->
         <scene sceneID="0NR-Vk-NB9">
@@ -245,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCu-Ei-obZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="118"/>
+            <point key="canvasLocation" x="-2058" y="-1230"/>
         </scene>
         <!--Global Impact View Controller-->
         <scene sceneID="fjC-Bn-9lg">
@@ -310,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLk-DP-DQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1597.5999999999999" y="116.49175412293854"/>
+            <point key="canvasLocation" x="-2058" y="-467"/>
         </scene>
         <!--Abstraction View Controller-->
         <scene sceneID="43L-qn-mLq">
@@ -318,7 +315,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="HLX-HT-fkj" customClass="AbstractionViewController" customModule="BrandonReich_CSP" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2e-Bi-hx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="116"/>
+            <point key="canvasLocation" x="-2057" y="-1953"/>
         </scene>
     </scenes>
     <resources>
