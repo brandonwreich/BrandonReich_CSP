@@ -33,6 +33,8 @@ public class InternetViewController: UITableViewController
     {
         super.viewDidLoad()
         setup()
+        //Uncomment the following line to presevre the selection between presentations
+        self.clearsSelectionOnViewWillAppear = false
     }
     
     
