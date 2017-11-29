@@ -22,6 +22,7 @@
 		0370D3B21FA2237B003DC36B /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */; };
 		0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */; };
 		03F982831FCF060D00C068C0 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F982821FCF060D00C068C0 /* InternetDetailViewController.swift */; };
+		03F982861FCF0B3C00C068C0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F982851FCF0B3C00C068C0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		03F982821FCF060D00C068C0 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		03F982851FCF0B3C00C068C0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F982861FCF0B3C00C068C0 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 			children = (
 				0370D3901FA21F6C003DC36B /* BrandonReich_CSP */,
 				0370D38F1FA21F6C003DC36B /* Products */,
+				03F982841FCF0B3C00C068C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +128,14 @@
 				0342135A1FC32B100047A979 /* Swing.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		03F982841FCF0B3C00C068C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F982851FCF0B3C00C068C0 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

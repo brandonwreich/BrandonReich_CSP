@@ -12,9 +12,8 @@ import WebKit
 public class InternetDetailViewController : UIViewController
 {
     //Mark: GUI Controls
-    @IBOutlet weak var Label: UILabel!
-    @IBOutlet weak var WebView: UIWebView!
-    
+    @IBOutlet weak var textView: UILabel!
+    @IBOutlet weak var webViewer: WKWebView!
     
     override public func viewDidLoad()
     {
