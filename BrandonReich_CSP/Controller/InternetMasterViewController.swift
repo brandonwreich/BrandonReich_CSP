@@ -13,22 +13,39 @@ public class InternetMasterViewController: UITableViewController
     private (set) lazy var internetTopics : [String] =
     {
         return [
-        "Definitionis",
-        "CSP",
-        "CTEC",
-        "Canyons",
-        "Twitter",
-        "Swift Guide"
+            "Definitions",
+            "CSP",
+            "CTEC",
+            "Canyons",
+            "Twitter",
+            "Swift Guide"
         ]
     }()
+    
+    private lazy var addresses : [String] = []
     
     private var detailViewController: InternetDetailViewController?
     
     private func setup() -> Void
     {
+        //TODO: Replace with address
+        addresses = [
+            
+            "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
+            "https://www.canyonsdistrict.org/",
+            "https://ctec.canyonsdistrict.org/",
+            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309",
+            "https://twitter.com/?lang=en"
+            
+        ]
         
+        if let splitView = splitViewController
+        {
+            let currentControllers = splitView.viewControllers
+            detailViewController = currentControllers[0] as? InternetDetailViewController
+        }
     }
-
+    
     override public func viewDidLoad()
     {
         super.viewDidLoad()
@@ -37,8 +54,8 @@ public class InternetMasterViewController: UITableViewController
         self.clearsSelectionOnViewWillAppear = false
     }
     
-    
     //MARK: - Table View Data Source
+    
     override public func numberOfSections(in tableView: UITableView) -> Int
     {
         // #warning Incomplete implementation, return the number of sections
@@ -58,15 +75,53 @@ public class InternetMasterViewController: UITableViewController
         
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    //MARK: Handle the internnal transfer
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier! == "showDetail"
+        {
+            if let indexPath = self.tableView.indexPathForSelectedRow
+            {
+                let urlString = addresses[indexPath.row]
+                let pageText : String
+                
+                if indexPath.row == 0
+                {
+                    pageText = """
+                    URL - (Uniform Resource Locator) Protocol for locating a file on the internet
+                    
+                    TCP - (Transmission Control Protocol) - establish and maintain a network conversation via which application programs can exchange data
+                    
+                    IP - a unique string of numbers separated by periods that identifies each computer using the Internet Protocol to communicate over a network.
+                    
+                    DNS - (Domain Name System) The internet’s system for converting alphabetic names into numeric IP address
+                    """
+                    
+                }
+                else
+                {
+                    pageText = internetTopics[indexPath.row]
+                }
+                
+                let controller = segue.destination as!InternetDetailViewController
+                
+                controller.detailAddress = urlString
+                controller.detailText = pageText
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
     }
-    */
-
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
