@@ -32,10 +32,10 @@ public class InternetMasterViewController: UITableViewController
         addresses = [
             
             "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
-            "https://www.canyonsdistrict.org/",
             "https://ctec.canyonsdistrict.org/",
-            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309",
-            "https://twitter.com/?lang=en"
+            "https://www.canyonsdistrict.org/",
+            "https://twitter.com/?lang=en",
+            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309"
             
         ]
         
