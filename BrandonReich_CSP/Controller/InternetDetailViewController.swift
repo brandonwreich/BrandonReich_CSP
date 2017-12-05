@@ -69,7 +69,7 @@ public class InternetDetailViewController : UIViewController
     override public func viewDidLoad()
     {
         super.viewDidLoad()
-        setup()
+        configureDetailView()
     }
     
     private func setup()-> Void
