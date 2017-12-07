@@ -54,7 +54,7 @@ public class InternetMasterViewController: UITableViewController
         self.clearsSelectionOnViewWillAppear = false
     }
     
-    //MARK: - Table View Data Source
+    //MARK:- Table View Data Source
     
     override public func numberOfSections(in tableView: UITableView) -> Int
     {
@@ -76,7 +76,7 @@ public class InternetMasterViewController: UITableViewController
         return cell
     }
     
-    //MARK: Handle the internnal transfer
+    //MARK: Handle the internal transfer
     override public func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier! == "showDetail"
