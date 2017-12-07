@@ -21,6 +21,7 @@
 		0370D3B01FA2236C003DC36B /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */; };
 		0370D3B21FA2237B003DC36B /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */; };
 		0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */; };
+		038A13961FD99CAD008870B1 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A13951FD99CAD008870B1 /* ArtCell.swift */; };
 		03F982831FCF060D00C068C0 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F982821FCF060D00C068C0 /* InternetDetailViewController.swift */; };
 		03F982861FCF0B3C00C068C0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F982851FCF0B3C00C068C0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
 		0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
+		038A13951FD99CAD008870B1 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		03F982821FCF060D00C068C0 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		03F982851FCF0B3C00C068C0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				0370D3911FA21F6C003DC36B /* AppDelegate.swift */,
 				0370D3931FA21F6C003DC36B /* ViewController.swift */,
 				0370D3A71FA22312003DC36B /* CreativityViewController.swift */,
+				038A13951FD99CAD008870B1 /* ArtCell.swift */,
 				0370D3A91FA22333003DC36B /* AbstractionViewController.swift */,
 				0370D3AB1FA22348003DC36B /* DataAndInformationViewController.swift */,
 				0370D3AD1FA2235D003DC36B /* AlgorithmsViewController.swift */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0370D3941FA21F6C003DC36B /* ViewController.swift in Sources */,
+				038A13961FD99CAD008870B1 /* ArtCell.swift in Sources */,
 				0370D3B01FA2236C003DC36B /* ProgrammingViewController.swift in Sources */,
 				0370D3921FA21F6C003DC36B /* AppDelegate.swift in Sources */,
 				0370D3A81FA22312003DC36B /* CreativityViewController.swift in Sources */,

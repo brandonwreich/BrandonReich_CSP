@@ -49,7 +49,7 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
             collectionView?.performBatchUpdates(
                 {
                     self.collectionView?.reloadItems(at: indexPaths)
-                })
+            })
             {
                 completed in
                 if let largePhotoIndexPath = self.largePhotoIndexPath
@@ -79,7 +79,7 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
     
     override public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView.dequeueReusableCell(withhReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
         
         artCell.backgroundColor = .magenta
         artCell.imageView.image = artSelection[indexPath.row]
@@ -116,9 +116,10 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
     
     public func collectionView(_ collectionView: UICollectionView, layout colectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section :Int) -> CGFloat
     {
-            return sectionInsets.left
+        return sectionInsets.left
     }
     
+    //What you do when you click on things
     override public func collectionView(_ collectionView:UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool
     {
         if largePhotoIndexPath == indexPath
