@@ -80,6 +80,4 @@ class DrawingView: UIView
         logo.close()
         logo.fill()
     }
-    
-
 }
