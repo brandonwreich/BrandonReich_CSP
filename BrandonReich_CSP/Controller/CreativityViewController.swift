@@ -86,7 +86,7 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
     
     //MARK:- Delegate Methods
     
-    public func collectionView(_ collectionView:UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
         if indexPath == largePhotoIndexPath
         {

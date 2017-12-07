@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -200,7 +199,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="rfC-YV-6Vx" kind="show" id="9mI-o2-mPH"/>
+                                    <segue destination="Xk7-34-6S8" kind="show" id="zgN-Md-p8N"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-TS-Vif" customClass="DrawingView" customModule="BrandonReich_CSP" customModuleProvider="target">
@@ -239,29 +238,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wET-Fr-nGj">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wET-Fr-nGj">
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-gc-YSm">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-gc-YSm">
                                             <rect key="frame" x="0.0" y="247" width="250" height="53"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="VJ7-ye-u62"/>
-                                            </constraints>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="wET-Fr-nGj" secondAttribute="bottom" id="97P-2J-GmL"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="dlD-gc-YSm" secondAttribute="trailing" id="WfL-yb-am6"/>
-                                    <constraint firstItem="dlD-gc-YSm" firstAttribute="leading" secondItem="eZr-TX-YIO" secondAttribute="leadingMargin" id="XOW-6k-aOR"/>
-                                    <constraint firstItem="dlD-gc-YSm" firstAttribute="top" secondItem="wET-Fr-nGj" secondAttribute="bottom" id="ZbG-nM-5Q6"/>
-                                    <constraint firstItem="wET-Fr-nGj" firstAttribute="leading" secondItem="eZr-TX-YIO" secondAttribute="leading" id="nCc-0g-cUo"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="dlD-gc-YSm" secondAttribute="bottom" id="nif-9Q-Yc3"/>
-                                    <constraint firstAttribute="trailing" secondItem="wET-Fr-nGj" secondAttribute="trailing" id="vuv-xr-Dyi"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="imageName" destination="dlD-gc-YSm" id="bXV-3L-E8S"/>
                                     <outlet property="imageView" destination="wET-Fr-nGj" id="wsc-bo-MvM"/>
