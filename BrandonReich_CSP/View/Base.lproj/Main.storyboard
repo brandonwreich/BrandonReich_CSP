@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -216,6 +217,68 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="-467.3163418290855"/>
         </scene>
+        <!--Creativity View Controller-->
+        <scene sceneID="UwF-hJ-aLj">
+            <objects>
+                <collectionViewController id="rYU-0C-XDF" customClass="CreativityViewController" customModule="BrandonReich_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="WFi-uD-GDY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SqF-YB-vHZ">
+                            <size key="itemSize" width="250" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artIdentifier" id="eZr-TX-YIO" customClass="ArtCell" customModule="BrandonReich_CSP" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="0.0" width="250" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wET-Fr-nGj">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-gc-YSm">
+                                            <rect key="frame" x="0.0" y="247" width="250" height="53"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="VJ7-ye-u62"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wET-Fr-nGj" secondAttribute="bottom" id="97P-2J-GmL"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="dlD-gc-YSm" secondAttribute="trailing" id="WfL-yb-am6"/>
+                                    <constraint firstItem="dlD-gc-YSm" firstAttribute="leading" secondItem="eZr-TX-YIO" secondAttribute="leadingMargin" id="XOW-6k-aOR"/>
+                                    <constraint firstItem="dlD-gc-YSm" firstAttribute="top" secondItem="wET-Fr-nGj" secondAttribute="bottom" id="ZbG-nM-5Q6"/>
+                                    <constraint firstItem="wET-Fr-nGj" firstAttribute="leading" secondItem="eZr-TX-YIO" secondAttribute="leading" id="nCc-0g-cUo"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="dlD-gc-YSm" secondAttribute="bottom" id="nif-9Q-Yc3"/>
+                                    <constraint firstAttribute="trailing" secondItem="wET-Fr-nGj" secondAttribute="trailing" id="vuv-xr-Dyi"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageName" destination="dlD-gc-YSm" id="bXV-3L-E8S"/>
+                                    <outlet property="imageView" destination="wET-Fr-nGj" id="wsc-bo-MvM"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="rYU-0C-XDF" id="jhO-5f-qLA"/>
+                            <outlet property="delegate" destination="rYU-0C-XDF" id="NgV-jA-fnd"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="q6c-Xu-y5y"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71F-UH-Uuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="44.527736131934034"/>
+        </scene>
         <!--Internet Detail View Controller-->
         <scene sceneID="0iq-Gl-aIu">
             <objects>
@@ -251,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wg-9F-fZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2120.8000000000002" y="-510.49475262368821"/>
+            <point key="canvasLocation" x="2460" y="-510.49475262368821"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="BFW-Zh-GRn">
@@ -422,6 +485,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2e-Bi-hx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2057" y="-1953"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jzk-w3-6Sh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xk7-34-6S8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pjc-8k-8L9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rYU-0C-XDF" kind="relationship" relationship="rootViewController" id="aY8-Vy-uof"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8k-ke-apl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="45"/>
         </scene>
     </scenes>
     <resources>
