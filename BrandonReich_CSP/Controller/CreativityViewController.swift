@@ -60,28 +60,31 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
         }
     }
     
+    //MARK: Lifecycle methods
     override public func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
-    override public func didReceiveMemoryWarning()
+    //MARK:- UICollectionView methods
+    override public func numberOfSections(in colltionView: UICollectionView) -> Int
     {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        return 1
     }
     
+    override public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return artSelection.count
+    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    override public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequueReusableCell(withhReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundColor = .magenta
+        artCell.imageView.image = artSelection[indexPath.row]
+        artCell.imageName.text = "My Art"
+        
+        return artCell
+    }
 }
