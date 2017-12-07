@@ -18,16 +18,12 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
     {
         return [
             UIImage(named: "myArt"),
-            UIImage(named: "cute"),
             UIImage(named: "JavaHaikú"),
             UIImage(named: "myArt"),
-            UIImage(named: "cute"),
             UIImage(named: "JavaHaikú"),
             UIImage(named: "myArt"),
-            UIImage(named: "cute"),
             UIImage(named: "JavaHaikú"),
             UIImage(named: "myArt"),
-            UIImage(named: "cute"),
             UIImage(named: "JavaHaikú")
         ]
     }()
@@ -81,7 +77,7 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
     {
         let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
         
-        artCell.backgroundColor = .magenta
+        artCell.backgroundColor = .white
         artCell.imageView.image = artSelection[indexPath.row]
         artCell.imageName.text = "My Art"
         
