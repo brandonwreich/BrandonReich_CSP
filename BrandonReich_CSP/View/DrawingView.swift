@@ -13,12 +13,13 @@ class DrawingView: UIView
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     
-     override func draw(_ rect: CGRect)
-     {
+    override func draw(_ rect: CGRect)
+    {
         // Drawing code
-        drawStickFigure().stroke()
-        drawTurtle()
-        drawHappyTree()
+        //        drawStickFigure().stroke()
+        //        drawTurtle()
+        //        drawHappyTree()
+        drawSnowMan()
     }
     
     private func drawStickFigure() -> UIBezierPath
@@ -28,7 +29,11 @@ class DrawingView: UIView
         UIColor.green.setStroke()
         stickFigure.lineWidth = 3.0
         
-        stickFigure.addArc(withCenter: CGPoint(x: 200, y: 200), radius:CGFloat(20), startAngle: CGFloat(0), endAngle: CGFloat(2) * CGFloat.pi, clockwise: true)
+        stickFigure.addArc(withCenter: CGPoint(x: 200, y: 200),
+                           radius:CGFloat(20),
+                           startAngle: CGFloat(0),
+                           endAngle: CGFloat(2) * CGFloat.pi,
+                           clockwise: true)
         stickFigure.move(to: CGPoint(x: 200, y: 220))
         stickFigure.addLine(to:CGPoint(x: 200, y: 270))
         stickFigure.move(to: CGPoint( x: 180, y: 240))
@@ -79,5 +84,124 @@ class DrawingView: UIView
         logo.addLine(to: CGPoint(x: 50, y: 350))
         logo.close()
         logo.fill()
+    }
+    
+    private func drawSnowMan () -> Void
+    {
+        let body = UIBezierPath()
+        UIColor.white.setFill()
+        UIColor.white.setStroke()
+        
+        body.addArc(withCenter: CGPoint (x: 165, y: 300),
+                    radius: CGFloat(70),
+                    startAngle: CGFloat(0),
+                    endAngle: CGFloat(2) * CGFloat.pi,
+                    clockwise: true)
+        body.close()
+        
+        body.move(to: CGPoint (x: 170, y: 200))
+        body.addArc(withCenter: CGPoint (x: 165, y: 200),
+                    radius: CGFloat(50),
+                    startAngle: CGFloat(0),
+                    endAngle: CGFloat(2) * CGFloat.pi,
+                    clockwise: true)
+        body.close()
+        
+        body.move(to: CGPoint (x: 170, y: 100))
+        body.addArc(withCenter: CGPoint (x: 165, y: 130),
+                    radius: CGFloat(30),
+                    startAngle: CGFloat(0),
+                    endAngle: CGFloat(2) * CGFloat.pi,
+                    clockwise: true)
+        body.close()
+        
+        body.fill()
+        body.stroke()
+        
+        let eyes = UIBezierPath()
+        UIColor.black.setFill()
+        UIColor.black.setStroke()
+        
+        eyes.addArc(withCenter: CGPoint(x: 160, y: 120),
+                    radius: CGFloat(5),
+                    startAngle: CGFloat(0),
+                    endAngle: CGFloat(2) * CGFloat.pi,
+                    clockwise: true)
+        eyes.close()
+        
+        eyes.move(to: CGPoint(x: 180, y: 120))
+        eyes.addArc(withCenter: CGPoint(x: 180, y: 120),
+                    radius: CGFloat(5),
+                    startAngle: CGFloat(0),
+                    endAngle: CGFloat(2) * CGFloat.pi,
+                    clockwise: true)
+        eyes.close()
+        
+        eyes.fill()
+        eyes.stroke()
+        
+        let nose = UIBezierPath()
+        UIColor.orange.setFill()
+        UIColor.orange.setStroke()
+        
+        nose.move(to: CGPoint (x: 170, y: 127))
+        nose.addLine(to: CGPoint (x: 170, y: 137))
+        nose.addLine(to: CGPoint (x: 150, y: 132))
+        nose.addLine(to: CGPoint (x: 170, y: 127))
+        
+        nose.fill()
+        nose.stroke()
+        
+        let mouth = UIBezierPath()
+        UIColor.black.setFill()
+        UIColor.black.setStroke()
+        
+        mouth.addArc(withCenter: CGPoint (x: 150, y: 140),
+                     radius: CGFloat(3),
+                     startAngle: CGFloat(0),
+                     endAngle: CGFloat(2) * CGFloat.pi,
+                     clockwise: true)
+        mouth.close()
+        
+        mouth.move(to: CGPoint (x: 156, y: 146))
+        mouth.addArc(withCenter: CGPoint (x: 156, y: 146),
+                     radius: CGFloat(3),
+                     startAngle: (0),
+                     endAngle: CGFloat(2) * CGFloat.pi,
+                     clockwise: true)
+        mouth.close()
+        
+        mouth.move(to: CGPoint (x: 165, y: 149))
+        mouth.addArc(withCenter: CGPoint (x: 165, y:149),
+                     radius: CGFloat(3),
+                     startAngle: CGFloat(0),
+                     endAngle: CGFloat(2) * CGFloat.pi,
+                     clockwise: true)
+        mouth.close()
+        
+        mouth.move(to:CGPoint (x: 174, y: 146))
+        mouth.addArc(withCenter: CGPoint (x: 174, y: 146),
+                     radius: CGFloat(3),
+                     startAngle: CGFloat(0),
+                     endAngle: CGFloat(2) * CGFloat.pi,
+                     clockwise: true)
+        mouth.close()
+        
+        mouth.move(to:CGPoint(x: 180, y: 140))
+        mouth.addArc(withCenter: CGPoint (x: 180, y: 140),
+                     radius: CGFloat(3),
+                     startAngle: CGFloat(0),
+                     endAngle: CGFloat(2) * CGFloat.pi,
+                     clockwise: true)
+        mouth.close()
+        
+        mouth.fill()
+        mouth.stroke()
+        
+        let buttons = UIBezierPath()
+        UIColor.black.setFill()
+        UIColor.black.setStroke
+        
+        
     }
 }
