@@ -92,23 +92,23 @@ class DrawingView: UIView
         UIColor.white.setFill()
         UIColor.white.setStroke()
         
-        body.addArc(withCenter: CGPoint (x: 165, y: 300),
+        body.addArc(withCenter: CGPoint (x: 167, y: 300),
                     radius: CGFloat(70),
                     startAngle: CGFloat(0),
                     endAngle: CGFloat(2) * CGFloat.pi,
                     clockwise: true)
         body.close()
         
-        body.move(to: CGPoint (x: 170, y: 200))
-        body.addArc(withCenter: CGPoint (x: 165, y: 200),
+        body.move(to: CGPoint (x: 167, y: 200))
+        body.addArc(withCenter: CGPoint (x: 167, y: 200),
                     radius: CGFloat(50),
                     startAngle: CGFloat(0),
                     endAngle: CGFloat(2) * CGFloat.pi,
                     clockwise: true)
         body.close()
         
-        body.move(to: CGPoint (x: 170, y: 100))
-        body.addArc(withCenter: CGPoint (x: 165, y: 130),
+        body.move(to: CGPoint (x: 167, y: 100))
+        body.addArc(withCenter: CGPoint (x: 167, y: 130),
                     radius: CGFloat(30),
                     startAngle: CGFloat(0),
                     endAngle: CGFloat(2) * CGFloat.pi,
@@ -200,7 +200,17 @@ class DrawingView: UIView
         
         let buttons = UIBezierPath()
         UIColor.black.setFill()
-        UIColor.black.setStroke
+        UIColor.black.setStroke()
+        
+        buttons.addArc(withCenter: CGPoint (x: 167, y: 190),
+                       radius: CGFloat(5),
+                       startAngle: CGFloat(0),
+                       endAngle: CGFloat(2) * CGFloat.pi,
+                       clockwise: true)
+        buttons.close()
+        
+        buttons.fill()
+        buttons.stroke()
         
         
     }
