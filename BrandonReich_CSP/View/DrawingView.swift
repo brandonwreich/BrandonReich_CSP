@@ -276,36 +276,34 @@ class DrawingView: UIView
         
         //Left arm, middle finger
         fingers.move(to: CGPoint(x: 82, y: 152))
-        fingers.addLine(to: CGPoint(x: 65, y: 135))
+        fingers.addLine(to: CGPoint(x: 62, y: 132))
         
         //Left arm, right finger
         fingers.move(to: CGPoint(x: 82, y: 152))
         fingers.addLine(to: CGPoint (x: 82, y: 132))
         
         //Right arm, left finger
-        fingers.move(to: CGPoint (x: 217, y: 187))
-        fingers.addLine(to: CGPoint (x: 217, y: 167))
+        fingers.move(to: CGPoint (x: 252, y: 152))
+        fingers.addLine(to: CGPoint (x: 252, y: 132))
         
         //Right arm, middle finger
-        fingers.move(to: CGPoint (x: 217, y: 187))
-        fingers.addLine(to: CGPoint (x: 237, y: 167))
+        fingers.move(to: CGPoint (x: 252, y: 152))
+        fingers.addLine(to: CGPoint (x: 272, y: 132))
         
         //Right arm, right finger
-        fingers.move(to: CGPoint (x: 217, y: 187))
-        fingers.addLine(to: CGPoint (x: 237, y: 187))
-        
-        //FIX THE FINGERS ON RIGHT ARM!!!
+        fingers.move(to: CGPoint (x: 252, y: 152))
+        fingers.addLine(to: CGPoint (x: 272, y: 152))
     
         fingers.fill()
         fingers.stroke()
         
     //SCARF
-        let scarf = UIBeizerPath()
+        let scarf = UIBezierPath()
         UIColor.red.setFill()
         UIColor.red.setStroke()
         
     //Hat
-        let hat = UIBezierPaht()
+        let hat = UIBezierPath()
         UIColor.black.setFill()
         UIColor.black.setStroke()
     }
