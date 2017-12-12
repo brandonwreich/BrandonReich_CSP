@@ -302,9 +302,25 @@ class DrawingView: UIView
         UIColor.red.setFill()
         UIColor.red.setStroke()
         
+        
+        
     //Hat
         let hat = UIBezierPath()
         UIColor.black.setFill()
         UIColor.black.setStroke()
+        
+        hat.move(to: CGPoint (x: 167, y: 100))
+        hat.addLine(to: CGPoint (x: 147, y: 100))
+        hat.addLine(to: CGPoint (x: 147, y: 95))
+        hat.addLine(to: CGPoint (x: 157, y: 95))
+        hat.addLine(to: CGPoint (x: 157, y: 65))
+        hat.addLine(to: CGPoint (x: 177, y: 65))
+        hat.addLine(to: CGPoint (x: 177, y: 95))
+        hat.addLine(to: CGPoint (x: 187, y:95))
+        hat.addLine(to: CGPoint (x: 187, y: 100))
+        hat.addLine(to: CGPoint (x: 167, y: 100))
+        
+        hat.fill()
+        hat.stroke()
     }
 }
