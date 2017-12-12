@@ -298,5 +298,15 @@ class DrawingView: UIView
     
         fingers.fill()
         fingers.stroke()
+        
+    //SCARF
+        let scarf = UIBeizerPath()
+        UIColor.red.setFill()
+        UIColor.red.setStroke()
+        
+    //Hat
+        let hat = UIBezierPaht()
+        UIColor.black.setFill()
+        UIColor.black.setStroke()
     }
 }
