@@ -293,6 +293,8 @@ class DrawingView: UIView
         //Right arm, right finger
         fingers.move(to: CGPoint (x: 217, y: 187))
         fingers.addLine(to: CGPoint (x: 237, y: 187))
+        
+        //FIX THE FINGERS ON RIGHT ARM!!!
     
         fingers.fill()
         fingers.stroke()
