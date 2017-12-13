@@ -329,4 +329,6 @@ class DrawingView: UIView
         hat.fill()
         hat.stroke()
     }
+    
+    
 }

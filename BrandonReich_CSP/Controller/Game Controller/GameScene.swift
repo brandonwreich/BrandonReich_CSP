@@ -52,8 +52,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                 }
             }
         }
-        
-        
     }
 
     private func setupPlayer() -> Void
@@ -68,7 +66,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         {
             //Closure parameters
             node, stop in
-            
         }
         
         if(changeDirection == true)
@@ -77,11 +74,8 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             self.enumerateChildNodes(withName: "invader")
             {
                 node, stop in
-            
             }
-            
         }
-        
     }
     
     private func invokeInvaderFire() -> Void
@@ -169,7 +163,5 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             firstBody = contact.bodyB
             secondBody = contact.bodyA
         }
-        
     }
-    
 }

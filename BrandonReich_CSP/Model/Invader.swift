@@ -14,14 +14,12 @@ public class Invader: SKSpriteNode
     var invaderRow : Int = 0
     var invaderCol : Int = 0
  
-    
     //MARK: - Initializers
     public init()
     {
         let texture = SKTexture(imageNamed: "enemy1")
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         self.name = "invader"
-    
     }
     // Required init must be provided by subclass
     required public init?(coder aDecoder: NSCoder)

@@ -14,7 +14,6 @@ public class InvaderBullet: Projectile
     override init(imageName: String, bulletSound:String?)
     {
         super.init(imageName: imageName, bulletSound: bulletSound)
-        
     }
     
     required public init?(coder aDecoder: NSCoder)

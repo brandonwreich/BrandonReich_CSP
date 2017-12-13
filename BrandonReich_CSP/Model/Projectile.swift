@@ -16,9 +16,7 @@ public class Projectile: SKSpriteNode
     {
         let texture = SKTexture(imageNamed: imageName)
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
-        
     }
-    
     
     required public init?(coder aDecoder: NSCoder)
     {

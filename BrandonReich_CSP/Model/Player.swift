@@ -66,5 +66,4 @@ public class Player: SKSpriteNode
     {
         
     }
-
 }
