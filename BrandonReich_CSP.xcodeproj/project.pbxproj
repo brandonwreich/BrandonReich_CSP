@@ -22,6 +22,8 @@
 		0370D3B21FA2237B003DC36B /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */; };
 		0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */; };
 		038A13961FD99CAD008870B1 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A13951FD99CAD008870B1 /* ArtCell.swift */; };
+		039D46111FE173E7001705BF /* GameController in Resources */ = {isa = PBXBuildFile; fileRef = 039D46101FE173E6001705BF /* GameController */; };
+		039D46131FE1747B001705BF /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 039D46121FE1747B001705BF /* Sounds */; };
 		03F982831FCF060D00C068C0 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F982821FCF060D00C068C0 /* InternetDetailViewController.swift */; };
 		03F982861FCF0B3C00C068C0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F982851FCF0B3C00C068C0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		038A13951FD99CAD008870B1 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
+		039D46101FE173E6001705BF /* GameController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameController; sourceTree = "<group>"; };
+		039D46121FE1747B001705BF /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		03F982821FCF060D00C068C0 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		03F982851FCF0B3C00C068C0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -91,6 +95,7 @@
 		0370D3A31FA21F83003DC36B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				039D46101FE173E6001705BF /* GameController */,
 				0370D3911FA21F6C003DC36B /* AppDelegate.swift */,
 				0370D3931FA21F6C003DC36B /* ViewController.swift */,
 				0370D3A71FA22312003DC36B /* CreativityViewController.swift */,
@@ -118,6 +123,7 @@
 		0370D3A51FA21FA6003DC36B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				039D46121FE1747B001705BF /* Sounds */,
 				0370D3981FA21F6C003DC36B /* Assets.xcassets */,
 				0370D39D1FA21F6C003DC36B /* Info.plist */,
 			);
@@ -202,6 +208,8 @@
 			files = (
 				0370D3991FA21F6C003DC36B /* Assets.xcassets in Resources */,
 				0370D3971FA21F6C003DC36B /* Main.storyboard in Resources */,
+				039D46131FE1747B001705BF /* Sounds in Resources */,
+				039D46111FE173E7001705BF /* GameController in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
