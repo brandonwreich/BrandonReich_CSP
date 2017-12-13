@@ -88,6 +88,19 @@ class DrawingView: UIView
     
     private func drawSnowMan () -> Void
     {
+       let background = UIBezierPath()
+        UIColor(patternImage: UIImage(named: "snowflake")!).setFill()
+        
+        background.move(to: CGPoint (x: 0, y: 0))
+        background.addLine(to: CGPoint (x: 0, y: 400))
+        background.addLine(to: CGPoint (x: 400, y: 400))
+        background.addLine(to: CGPoint (x: 400, y: 0))
+        background.addLine(to: CGPoint (x: 0, y: 0))
+        
+        background.fill()
+        background.stroke()
+        
+        
         let body = UIBezierPath()
         UIColor.white.setFill()
         UIColor.white.setStroke()
@@ -296,13 +309,6 @@ class DrawingView: UIView
     
         fingers.fill()
         fingers.stroke()
-        
-    //SCARF
-        let scarf = UIBezierPath()
-        UIColor.red.setFill()
-        UIColor.red.setStroke()
-        
-        
         
     //Hat
         let hat = UIBezierPath()
