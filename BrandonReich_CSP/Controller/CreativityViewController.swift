@@ -19,12 +19,13 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
         return [
             UIImage(named: "myArt"),
             UIImage(named: "JavaHaikú"),
+            UIImage(named: "CodeSnowman"),
             UIImage(named: "myArt"),
             UIImage(named: "JavaHaikú"),
+            UIImage(named: "CodeSnowman"),
             UIImage(named: "myArt"),
             UIImage(named: "JavaHaikú"),
-            UIImage(named: "myArt"),
-            UIImage(named: "JavaHaikú")
+            UIImage(named: "CodeSnowman")
         ]
     }()
     

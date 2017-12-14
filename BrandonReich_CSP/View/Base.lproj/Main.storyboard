@@ -199,7 +199,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="2E2-hN-icf" kind="show" id="knS-KH-apX"/>
+                                    <segue destination="Xk7-34-6S8" kind="showDetail" id="ZGe-Y1-uIz"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RD0-TS-Vif" customClass="DrawingView" customModule="BrandonReich_CSP" customModuleProvider="target">
@@ -471,7 +471,7 @@
         <scene sceneID="Xi6-5C-iEz">
             <objects>
                 <viewController id="2E2-hN-icf" customClass="ProgrammingViewController" customModule="BrandonReich_CSP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="x8T-2V-Wot">
+                    <view key="view" contentMode="scaleToFill" id="x8T-2V-Wot" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -480,7 +480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSs-NH-ean" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1258" y="415"/>
+            <point key="canvasLocation" x="-1268" y="72"/>
         </scene>
         <!--Abstraction View Controller-->
         <scene sceneID="43L-qn-mLq">

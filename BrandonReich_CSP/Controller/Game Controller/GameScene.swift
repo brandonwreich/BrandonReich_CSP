@@ -108,7 +108,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
         
-        backgroundColor = UIColor.magenta
+        backgroundColor = UIColor.green
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
@@ -117,11 +117,15 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         
     }
 
+    //Handles the firing
+    //Every time you tap the screen a bullet will fire
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
-       
+        player.fireBullet(scene: self)
     }
     
+    //Called by the game engine
+    //Updates every so often
     override public func update(_ currentTime: CFTimeInterval) -> Void
     {
         

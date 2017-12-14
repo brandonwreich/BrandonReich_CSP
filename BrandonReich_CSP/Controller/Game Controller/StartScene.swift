@@ -30,6 +30,8 @@ public class StartScene : SKScene
         let touchLocation = currentTouch?.location(in: self)
         let touchedNode = self.atPoint(touchLocation!)
         
+        //When touched it says to move to another scene
+        //Then it goes to game scene
         if (touchedNode.name == "start")
         {
             let gameOverScene = GameScene(size: size)

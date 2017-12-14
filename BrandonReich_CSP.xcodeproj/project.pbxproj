@@ -30,6 +30,11 @@
 		039D46281FE181E3001705BF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D46251FE181E3001705BF /* GameScene.swift */; };
 		039D46291FE181E3001705BF /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D46261FE181E3001705BF /* StartScene.swift */; };
 		039D462A1FE181E3001705BF /* LevelCompleteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D46271FE181E3001705BF /* LevelCompleteScene.swift */; };
+		039D46321FE1888C001705BF /* boss sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 039D462F1FE18230001705BF /* boss sound.mp3 */; };
+		039D46331FE1888C001705BF /* extra sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 039D46301FE18230001705BF /* extra sound.mp3 */; };
+		039D46341FE1888C001705BF /* invader sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 039D462D1FE18230001705BF /* invader sound.mp3 */; };
+		039D46351FE1888C001705BF /* laser sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 039D462C1FE18230001705BF /* laser sound.mp3 */; };
+		039D46361FE1888C001705BF /* powerup sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 039D462E1FE18230001705BF /* powerup sound.mp3 */; };
 		03F982831FCF060D00C068C0 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F982821FCF060D00C068C0 /* InternetDetailViewController.swift */; };
 		03F982861FCF0B3C00C068C0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F982851FCF0B3C00C068C0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -250,9 +255,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039D46331FE1888C001705BF /* extra sound.mp3 in Resources */,
+				039D46321FE1888C001705BF /* boss sound.mp3 in Resources */,
+				039D46361FE1888C001705BF /* powerup sound.mp3 in Resources */,
 				0370D3991FA21F6C003DC36B /* Assets.xcassets in Resources */,
 				0370D3971FA21F6C003DC36B /* Main.storyboard in Resources */,
 				039D46181FE176F2001705BF /* StarField.sks in Resources */,
+				039D46351FE1888C001705BF /* laser sound.mp3 in Resources */,
+				039D46341FE1888C001705BF /* invader sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
