@@ -20,6 +20,7 @@ class DrawingView: UIView
         drawTurtle()
         drawHappyTree()
         drawSnowMan()
+        drawSandCastle()
     }
     
     private func drawStickFigure() -> UIBezierPath
@@ -328,5 +329,57 @@ class DrawingView: UIView
         
         hat.fill()
         hat.stroke()
+    }
+    
+    public func drawSandCastle() -> Void
+    {
+        let background = UIBezierPath()
+        UIColor.cyan.setFill()
+        UIColor.white.setStroke()
+        
+        background.move(to: CGPoint (x: 0, y: 0))
+        background.addLine(to: CGPoint (x: 0, y: 400))
+        background.addLine(to: CGPoint (x: 400, y: 400))
+        background.addLine(to: CGPoint (x: 400, y: 0))
+        background.addLine(to: CGPoint (x: 0, y: 0))
+        
+        background.fill()
+        background.stroke()
+        
+    //SANDBOX BOARDER
+        let boards = UIBezierPath()
+        UIColor.brown.setFill()
+        UIColor.black.setStroke()
+        
+        //Front board
+        boards.move(to: CGPoint (x: 50, y: 300))
+        boards.addLine(to: CGPoint (x: 300, y: 300))
+        boards.addLine(to: CGPoint (x: 300, y: 330))
+        boards.addLine(to: CGPoint (x: 50, y: 330))
+        boards.addLine(to: CGPoint (x: 50, y: 300))
+        
+        //Back board
+        boards.move(to: CGPoint (x: 75, y: 200))
+        boards.addLine(to: CGPoint (x: 275, y: 200))
+        boards.addLine(to: CGPoint (x: 275, y: 225))
+        boards.addLine(to: CGPoint (x: 75, y: 225))
+        boards.addLine(to: CGPoint (x: 75, y: 200))
+        
+        //Left board
+        boards.move(to: CGPoint (x: 50, y: 300))
+        boards.addLine(to: CGPoint (x: 75, y: 200))
+        boards.addLine(to: CGPoint (x: 85, y: 225))
+        boards.addLine(to: CGPoint (x: 60, y: 330))
+        
+        //Right board
+        boards.move(to: CGPoint (x: 300, y: 300))
+        boards.addLine(to: CGPoint (x: 275, y: 200))
+        boards.addLine(to: CGPoint (x: 265, y: 225))
+        boards.addLine(to: CGPoint (x: 290, y: 330))
+        
+        //FIX RIGHT BOARD
+        
+        boards.stroke()
+        boards.fill()
     }
 }
