@@ -16,9 +16,9 @@ class DrawingView: UIView
     override func draw(_ rect: CGRect)
     {
         // Drawing code
-        //        drawStickFigure().stroke()
-        //        drawTurtle()
-        //        drawHappyTree()
+        drawStickFigure().stroke()
+        drawTurtle()
+        drawHappyTree()
         drawSnowMan()
     }
     
@@ -329,6 +329,4 @@ class DrawingView: UIView
         hat.fill()
         hat.stroke()
     }
-    
-    
 }
