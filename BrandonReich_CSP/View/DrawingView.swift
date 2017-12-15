@@ -334,7 +334,7 @@ class DrawingView: UIView
     public func drawSandCastle() -> Void
     {
         baseAndSand()
-        sandCastleBases()
+        sandCastleBasesAndTowers()
     }
     
     public func baseAndSand() -> Void
@@ -409,19 +409,58 @@ class DrawingView: UIView
 
     }
     
-    public func sandCastleBases() ->Void
+    public func sandCastleBasesAndTowers() ->Void
     {
-        let bases = UIBezierPath()
+        bigBase()
+        leftTower()
+        rightTower()
+    }
+    
+    public func bigBase() -> Void
+    {
+        let base = UIBezierPath()
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
-        bases.lineWidth = 2.5
+  //      base.lineWidth = 2.5
+
+        base.move(to: CGPoint (x: 100, y: 255))
+        base.addLine(to: CGPoint (x: 100, y: 205))
+        base.addLine(to: CGPoint (x: 250, y: 205))
+        base.addLine(to: CGPoint (x: 250, y: 255))
         
-        bases.move(to: CGPoint (x: 100, y: 285))
-        bases.addLine(to: CGPoint (x: 100, y: 235))
-        bases.addLine(to: CGPoint (x: 125, y: 235))
-        bases.addLine(to: CGPoint (x: 125, y: 285))
+        base.fill()
+        base.stroke()
+    }
     
-        bases.stroke()
-        bases.fill()
+    public func leftTower() -> Void
+    {
+        let tower = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+//        tower.lineWidth = 2.5
+    
+        tower.move(to: CGPoint (x: 90, y: 260))
+        tower.addLine(to: CGPoint (x: 90, y: 215))
+        tower.addLine(to: CGPoint (x:  110, y: 215))
+        tower.addLine(to: CGPoint (x: 110, y: 260))
+        
+        tower.fill()
+        tower.stroke()
+    }
+    
+    public func rightTower() -> Void
+    {
+        let tower = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+//        tower.lineWidth = 2.5
+        
+        tower.move(to: CGPoint (x: 260, y: 260))
+        tower.addLine(to: CGPoint (x: 260, y: 215))
+        tower.addLine(to: CGPoint (x: 240, y: 215))
+        tower.addLine(to: CGPoint (x: 240, y: 260))
+        
+        tower.stroke()
+        tower.fill()
     }
 }
