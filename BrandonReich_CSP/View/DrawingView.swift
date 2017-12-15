@@ -333,6 +333,11 @@ class DrawingView: UIView
     
     public func drawSandCastle() -> Void
     {
+        baseAndSand()
+    }
+    
+    public func baseAndSand() -> Void
+    {
         let background = UIBezierPath()
         UIColor.cyan.setFill()
         UIColor.white.setStroke()
@@ -345,18 +350,11 @@ class DrawingView: UIView
         
         background.fill()
         background.stroke()
-        
-    //SANDBOX BOARDER
+    
         let boards = UIBezierPath()
         UIColor.brown.setFill()
         UIColor.black.setStroke()
-        
-        //Front board
-        boards.move(to: CGPoint (x: 50, y: 300))
-        boards.addLine(to: CGPoint (x: 300, y: 300))
-        boards.addLine(to: CGPoint (x: 300, y: 330))
-        boards.addLine(to: CGPoint (x: 50, y: 330))
-        boards.addLine(to: CGPoint (x: 50, y: 300))
+        boards.lineWidth = 3.0
         
         //Back board
         boards.move(to: CGPoint (x: 75, y: 200))
@@ -372,14 +370,44 @@ class DrawingView: UIView
         boards.addLine(to: CGPoint (x: 60, y: 330))
         
         //Right board
-        boards.move(to: CGPoint (x: 300, y: 300))
-        boards.addLine(to: CGPoint (x: 275, y: 200))
+        boards.move(to: CGPoint (x: 290, y: 330))
         boards.addLine(to: CGPoint (x: 265, y: 225))
-        boards.addLine(to: CGPoint (x: 290, y: 330))
+        boards.addLine(to: CGPoint (x: 275, y: 200))
+        boards.addLine(to: CGPoint (x: 300, y: 300))
         
-        //FIX RIGHT BOARD
+        boards.fill()
+        boards.stroke()
+        
+        let sand = UIBezierPath()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setStroke()
+        
+        sand.move(to: CGPoint(x: 300, y: 300))
+        sand.addLine(to: CGPoint (x: 275, y: 225))
+        sand.addLine(to: CGPoint (x: 75, y: 225))
+        sand.addLine(to: CGPoint (x: 50, y: 300))
+        sand.addLine(to: CGPoint (x: 300, y: 300))
+
+        sand.fill()
+        sand.stroke()
+        
+        UIColor.brown.setFill()
+        UIColor.black.setStroke()
+        boards.lineWidth = 3.0
+        
+        //Front board
+        boards.move(to: CGPoint (x: 50, y: 300))
+        boards.addLine(to: CGPoint (x: 300, y: 300))
+        boards.addLine(to: CGPoint (x: 300, y: 330))
+        boards.addLine(to: CGPoint (x: 50, y: 330))
+        boards.addLine(to: CGPoint (x: 50, y: 300))
+
+        //Board deatails
+        boards.move(to: CGPoint (x: 275, y: 200))
+        boards.addLine(to: CGPoint (x: 265, y: 225))
         
         boards.stroke()
         boards.fill()
+
     }
 }
