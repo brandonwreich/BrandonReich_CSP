@@ -56,7 +56,8 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 
     private func setupPlayer() -> Void
     {
-    
+        player.position = CGPoint(x: self.frame.midX, y: player.size.height/2 + 10)
+        addChild(player)
     }
     
     private func moveInvaders() -> Void
@@ -119,7 +120,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
         
-        backgroundColor = UIColor.green
+        backgroundColor = UIColor.cyan
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
