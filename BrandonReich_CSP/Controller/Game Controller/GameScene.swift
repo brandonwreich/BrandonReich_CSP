@@ -81,7 +81,11 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             self.enumerateChildNodes(withName: "invader")
             {
                 node, stop in
+                let invader = node as! SKSpriteNode
+                invader.position.y -= CGFloat(10)
             }
+            
+            changeDirection = false
         }
     }
     
@@ -135,7 +139,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     //Updates every so often
     override public func update(_ currentTime: CFTimeInterval) -> Void
     {
-        
+        moveInvaders()
     }
     
     override public func didSimulatePhysics()
