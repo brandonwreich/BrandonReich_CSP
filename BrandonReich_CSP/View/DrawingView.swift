@@ -334,6 +334,7 @@ class DrawingView: UIView
     public func drawSandCastle() -> Void
     {
         baseAndSand()
+        sandCastleBases()
     }
     
     public func baseAndSand() -> Void
@@ -375,39 +376,52 @@ class DrawingView: UIView
         boards.addLine(to: CGPoint (x: 275, y: 200))
         boards.addLine(to: CGPoint (x: 300, y: 300))
         
-        boards.fill()
         boards.stroke()
+        boards.fill()
         
+        //Sand
         let sand = UIBezierPath()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setStroke()
         
-        sand.move(to: CGPoint(x: 300, y: 300))
+        sand.move(to: CGPoint (x: 300, y: 300))
         sand.addLine(to: CGPoint (x: 275, y: 225))
         sand.addLine(to: CGPoint (x: 75, y: 225))
         sand.addLine(to: CGPoint (x: 50, y: 300))
         sand.addLine(to: CGPoint (x: 300, y: 300))
 
-        sand.fill()
         sand.stroke()
+        sand.fill()
         
+        //Front board
         UIColor.brown.setFill()
         UIColor.black.setStroke()
         boards.lineWidth = 3.0
         
-        //Front board
         boards.move(to: CGPoint (x: 50, y: 300))
         boards.addLine(to: CGPoint (x: 300, y: 300))
         boards.addLine(to: CGPoint (x: 300, y: 330))
         boards.addLine(to: CGPoint (x: 50, y: 330))
         boards.addLine(to: CGPoint (x: 50, y: 300))
-
-        //Board deatails
-        boards.move(to: CGPoint (x: 275, y: 200))
-        boards.addLine(to: CGPoint (x: 265, y: 225))
         
         boards.stroke()
         boards.fill()
 
+    }
+    
+    public func sandCastleBases() ->Void
+    {
+        let bases = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+        bases.lineWidth = 2.5
+        
+        bases.move(to: CGPoint (x: 100, y: 285))
+        bases.addLine(to: CGPoint (x: 100, y: 235))
+        bases.addLine(to: CGPoint (x: 125, y: 235))
+        bases.addLine(to: CGPoint (x: 125, y: 285))
+    
+        bases.stroke()
+        bases.fill()
     }
 }
