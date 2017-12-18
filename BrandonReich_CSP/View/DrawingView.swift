@@ -414,6 +414,7 @@ class DrawingView: UIView
         bigBase()
         leftTower()
         rightTower()
+        towerDetails()
     }
     
     public func bigBase() -> Void
@@ -425,6 +426,30 @@ class DrawingView: UIView
 
         base.move(to: CGPoint (x: 100, y: 255))
         base.addLine(to: CGPoint (x: 100, y: 205))
+        base.addLine(to: CGPoint (x: 120, y: 205))
+        base.addLine(to: CGPoint (x: 120, y: 210))
+        base.addLine(to: CGPoint (x: 130, y: 210))
+        base.addLine(to: CGPoint (x: 130, y: 205))
+        base.addLine(to: CGPoint (x: 140, y: 205))
+        base.addLine(to: CGPoint (x: 140, y: 210))
+        base.addLine(to: CGPoint (x: 150, y: 210))
+        base.addLine(to: CGPoint (x: 150, y: 205))
+        base.addLine(to: CGPoint (x: 160, y: 205))
+        base.addLine(to: CGPoint (x: 160, y: 210))
+        base.addLine(to: CGPoint (x: 170, y: 210))
+        base.addLine(to: CGPoint (x: 170, y: 205))
+        base.addLine(to: CGPoint (x: 180, y: 205))
+        base.addLine(to: CGPoint (x: 180, y: 210))
+        base.addLine(to: CGPoint (x: 190, y: 210))
+        base.addLine(to: CGPoint (x: 190, y: 205))
+        base.addLine(to: CGPoint (x: 200, y: 205))
+        base.addLine(to: CGPoint (x: 200, y: 210))
+        base.addLine(to: CGPoint (x: 210, y: 210))
+        base.addLine(to: CGPoint (x: 210, y: 205))
+        base.addLine(to: CGPoint (x: 220, y: 205))
+        base.addLine(to: CGPoint (x: 220, y: 210))
+        base.addLine(to: CGPoint (x: 230, y: 210))
+        base.addLine(to: CGPoint (x: 230, y: 205))
         base.addLine(to: CGPoint (x: 250, y: 205))
         base.addLine(to: CGPoint (x: 250, y: 255))
         
@@ -507,5 +532,22 @@ class DrawingView: UIView
         
         tower.fill()
         tower.stroke()
+    }
+    
+    public func towerDetails() -> Void
+    {
+        let window = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor.black.setFill()
+        
+        window.move(to: CGPoint (x: 245, y: 230))
+        window.addLine(to: CGPoint (x: 245, y: 225))
+        window.addLine(to: CGPoint (x: 247.5, y: 223.5))
+        window.addLine(to: CGPoint (x: 250, y: 225))
+        window.addLine(to: CGPoint (x: 250, y: 230))
+        window.addLine(to: CGPoint (x: 245, y: 230))
+        
+        window.fill()
+        window.stroke()
     }
 }
