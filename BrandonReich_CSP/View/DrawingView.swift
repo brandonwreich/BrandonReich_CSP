@@ -421,7 +421,7 @@ class DrawingView: UIView
         let base = UIBezierPath()
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
-  //      base.lineWidth = 2.5
+        base.lineWidth = 2.5
 
         base.move(to: CGPoint (x: 100, y: 255))
         base.addLine(to: CGPoint (x: 100, y: 205))
@@ -437,12 +437,35 @@ class DrawingView: UIView
         let tower = UIBezierPath()
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
-//        tower.lineWidth = 2.5
+        tower.lineWidth = 2.5
     
+        //Base
         tower.move(to: CGPoint (x: 90, y: 260))
         tower.addLine(to: CGPoint (x: 90, y: 215))
         tower.addLine(to: CGPoint (x:  110, y: 215))
         tower.addLine(to: CGPoint (x: 110, y: 260))
+        
+        //Top
+        tower.move(to: CGPoint (x: 90, y: 215))
+        tower.addLine(to: CGPoint (x: 80, y: 210))
+        tower.addLine(to: CGPoint (x: 80, y: 200))
+        tower.addLine(to: CGPoint (x: 85, y: 200))
+        tower.addLine(to: CGPoint (x: 85, y: 205))
+        tower.addLine(to: CGPoint (x: 90, y: 205))
+        tower.addLine(to: CGPoint (x: 90, y: 200))
+        tower.addLine(to: CGPoint (x: 95, y: 200))
+        tower.addLine(to: CGPoint (x: 95, y: 205))
+        tower.addLine(to: CGPoint (x: 100, y: 205))
+        tower.addLine(to: CGPoint (x: 105, y: 205))
+        tower.addLine(to: CGPoint (x: 105, y: 200))
+        tower.addLine(to: CGPoint (x: 110, y: 200))
+        tower.addLine(to: CGPoint (x: 110, y: 205))
+        tower.addLine(to: CGPoint (x: 115, y: 205))
+        tower.addLine(to: CGPoint (x: 115, y: 200))
+        tower.addLine(to: CGPoint (x: 120, y: 200))
+        tower.addLine(to: CGPoint (x: 120, y: 210))
+        tower.addLine(to: CGPoint (x: 110, y: 215))
+        
         
         tower.fill()
         tower.stroke()
@@ -453,14 +476,36 @@ class DrawingView: UIView
         let tower = UIBezierPath()
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
-//        tower.lineWidth = 2.5
+        tower.lineWidth = 2.5
         
+        //Base
         tower.move(to: CGPoint (x: 260, y: 260))
         tower.addLine(to: CGPoint (x: 260, y: 215))
         tower.addLine(to: CGPoint (x: 240, y: 215))
         tower.addLine(to: CGPoint (x: 240, y: 260))
         
-        tower.stroke()
+        //Top
+        tower.move(to: CGPoint(x: 240, y: 215))
+        tower.addLine(to: CGPoint (x: 230, y: 210))
+        tower.addLine(to: CGPoint (x: 230, y: 200))
+        tower.addLine(to: CGPoint (x: 235, y: 200))
+        tower.addLine(to: CGPoint (x: 235, y: 205))
+        tower.addLine(to: CGPoint (x: 240, y: 205))
+        tower.addLine(to: CGPoint (x: 240, y: 200))
+        tower.addLine(to: CGPoint (x: 245, y: 200))
+        tower.addLine(to: CGPoint (x: 245, y: 205))
+        tower.addLine(to: CGPoint (x: 250, y: 205))
+        tower.addLine(to: CGPoint (x: 255, y: 205))
+        tower.addLine(to: CGPoint (x: 255, y: 200))
+        tower.addLine(to: CGPoint (x: 260, y: 200))
+        tower.addLine(to: CGPoint (x: 260, y: 205))
+        tower.addLine(to: CGPoint (x: 265, y: 205))
+        tower.addLine(to: CGPoint (x: 265, y: 200))
+        tower.addLine(to: CGPoint (x: 270, y: 200))
+        tower.addLine(to: CGPoint (x: 270, y: 210))
+        tower.addLine(to: CGPoint (x: 260, y: 215))
+        
         tower.fill()
+        tower.stroke()
     }
 }
