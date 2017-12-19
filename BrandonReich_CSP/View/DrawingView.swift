@@ -540,12 +540,21 @@ class DrawingView: UIView
         UIColor.black.setStroke()
         UIColor.black.setFill()
         
-        window.move(to: CGPoint (x: 245, y: 230))
-        window.addLine(to: CGPoint (x: 245, y: 225))
-        window.addLine(to: CGPoint (x: 247.5, y: 223.5))
-        window.addLine(to: CGPoint (x: 250, y: 225))
-        window.addLine(to: CGPoint (x: 250, y: 230))
-        window.addLine(to: CGPoint (x: 245, y: 230))
+        //Right tower window
+        window.move(to: CGPoint (x: 248, y: 230))
+        window.addLine(to: CGPoint (x: 248, y: 225))
+        window.addLine(to: CGPoint (x: 250.5, y: 223.5))
+        window.addLine(to: CGPoint (x: 252, y: 225))
+        window.addLine(to: CGPoint (x: 252, y: 230))
+        window.addLine(to: CGPoint (x: 248, y: 230))
+        
+        //Left tower window
+        window.move(to: CGPoint (x: 98, y: 230))
+        window.addLine(to: CGPoint (x: 98, y: 225))
+        window.addLine(to: CGPoint (x: 100.5, y: 223.5))
+        window.addLine(to: CGPoint (x: 102, y: 225))
+        window.addLine(to: CGPoint (x: 102, y: 230))
+        window.addLine(to: CGPoint (x: 98, y:230))
         
         window.fill()
         window.stroke()
