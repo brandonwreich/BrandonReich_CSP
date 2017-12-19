@@ -559,4 +559,12 @@ class DrawingView: UIView
         window.fill()
         window.stroke()
     }
+    
+    public func bigBaseDetails() -> Void
+    {
+        let door = UIBezierPath()
+        
+    //    door.move(to: CGPoint (x: ))
+        
+    }
 }
