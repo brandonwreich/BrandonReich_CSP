@@ -53,7 +53,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             }
         }
     }
-
+    
     private func setupPlayer() -> Void
     {
         player.position = CGPoint(x: self.frame.midX, y: player.size.height/2 + 10)
@@ -97,12 +97,15 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     func fireInvaderBullet() -> Void
     {
-       
+        
     }
     
     func newGame() -> Void
     {
-        
+        let newGameScene = StartScene(size: size)
+        newGameScene.scaleMode = scaleMode
+        let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+        view?.presentScene(newGameScene, transition: transitionType)
     }
     
     func levelComplete() -> Void
@@ -114,14 +117,13 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
             view?.presentScene(levelCompleteScene, transition: transitionType)
         }
-        
+            
         else
         {
             gameLevel = 1
             newGame()
         }
     }
-    
     
     //MARK:- Scene methods
     
@@ -140,7 +142,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         setupAccelerometer()
         
     }
-
+    
     //Handles the firing
     //Every time you tap the screen a bullet will fire
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
@@ -159,7 +161,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     {
         
     }
-
+    
     //MARK:- Handle Motion
     func setupAccelerometer() -> Void
     {
@@ -168,11 +170,10 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             {
                 (accelerometerData: CMAccelerometerData?, error: Error?)
                 in
-                    let acceleration = accelerometerData!.acceleration
-                    self.accelerationX = CGFloat(acceleration.x)
-                } )
+                let acceleration = accelerometerData!.acceleration
+                self.accelerationX = CGFloat(acceleration.x)
+        } )
     }
-    
     
     //MARK:- SKPhysicsContactDelegate method
     
@@ -180,13 +181,13 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     {
         var firstBody: SKPhysicsBody
         var secondBody: SKPhysicsBody
-    
+        
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask
         {
             firstBody = contact.bodyA
             secondBody = contact.bodyB
         }
-    
+            
         else
         {
             firstBody = contact.bodyB
