@@ -37,7 +37,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         {
             for invaderCol in 0..<numberOfInvaders
             {
-                let currentInvader :Invader = Invader()
+                let currentInvader : Invader = Invader()
                 let halfWidth : CGFloat = currentInvader.size.width / 2
                 let xPosition : CGFloat = size.width - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10
                 
@@ -76,7 +76,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             }
         }
         
-        if(changeDirection == true)
+        if(changeDirection)
         {
             self.invaderSpeed *= -1
             self.enumerateChildNodes(withName: "invader")
