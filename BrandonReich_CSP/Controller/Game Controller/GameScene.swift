@@ -190,8 +190,8 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             {
                 (accelerometerData: CMAccelerometerData?, error: Error?)
                 in
-                let acceleration = accelerometerData!.acceleration
-                self.accelerationX = CGFloat(acceleration.x)
+                    let acceleration = accelerometerData!.acceleration
+                    self.accelerationX = CGFloat(acceleration.x)
         } )
     }
     
