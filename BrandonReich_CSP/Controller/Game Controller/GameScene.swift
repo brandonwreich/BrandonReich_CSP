@@ -107,7 +107,19 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     func levelComplete() -> Void
     {
+        if( gameLevel <= maxLevels)
+        {
+            let levelCompleteScene = LevelCompleteScene(size: size)
+            levelCompleteScene.scaleMode = scaleMode
+            let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+            view?.presentScene(levelCompleteScene, transition: transitionType)
+        }
         
+        else
+        {
+            gameLevel = 1
+            newGame()
+        }
     }
     
     
