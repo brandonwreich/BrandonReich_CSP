@@ -214,7 +214,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             secondBody = contact.bodyA
         }
         
-        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerLaser != 0))
         {
             print("Invader and Player Bullet Contact")
         }
@@ -229,17 +229,19 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             print("Invader and Player Collision Contact")
         }
         
-        if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) && (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
+        //When you get hit with a laser
+        if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) && (secondBody.categoryBitMask & CollisionCategories.InvaderLaser != 0))
         {
             player.die()
         }
         
-        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
+        //When you hit an invader with a laer
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerLaser != 0))
         {
             player.kill()
         }
         
-        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerLaser != 0))
         {
             if (contact.bodyA.node?.parent == nil || contact.bodyB.node?.parent == nil)
             {
