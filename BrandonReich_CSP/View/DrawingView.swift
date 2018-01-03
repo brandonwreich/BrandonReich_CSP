@@ -411,6 +411,7 @@ class DrawingView: UIView
     
     public func sandCastleBasesAndTowers() ->Void
     {
+        bigTower()
         bigBase()
         leftTower()
         rightTower()
@@ -573,5 +574,29 @@ class DrawingView: UIView
         door.addLine(to: CGPoint (x: 188, y: 255))
         
         door.stroke()
+    }
+    
+    public func bigTower()
+    {
+        let tower = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+        tower.lineWidth = 2.5
+        
+        //Base
+        tower.move(to: CGPoint (x: 115, y: 255))
+        tower.addLine(to: CGPoint (x: 115, y: 200))
+        tower.addLine(to: CGPoint (x: 235, y: 200))
+        tower.addLine(to: CGPoint (x: 235, y: 255))
+        
+        //Top
+        tower.move(to: CGPoint (x: 115, y: 200))
+        tower.addLine(to: CGPoint (x: 95, y: 190))
+ //FIX TOWER -- GO BY 15
+        tower.addLine(to: CGPoint (x: 235, y: 200))
+        
+        
+        tower.fill()
+        tower.stroke()
     }
 }
