@@ -415,6 +415,7 @@ class DrawingView: UIView
         leftTower()
         rightTower()
         towerDetails()
+        bigBaseDetails()
     }
     
     public func bigBase() -> Void
@@ -538,7 +539,7 @@ class DrawingView: UIView
     {
         let window = UIBezierPath()
         UIColor.black.setStroke()
-        UIColor.black.setFill()
+        window.lineWidth = 2.0
         
         //Right tower window
         window.move(to: CGPoint (x: 248, y: 230))
@@ -556,15 +557,21 @@ class DrawingView: UIView
         window.addLine(to: CGPoint (x: 102, y: 230))
         window.addLine(to: CGPoint (x: 98, y:230))
         
-        window.fill()
         window.stroke()
     }
     
     public func bigBaseDetails() -> Void
     {
         let door = UIBezierPath()
+        UIColor.black.setStroke()
+        door.lineWidth = 2.0
         
-    //    door.move(to: CGPoint (x: ))
+        door.move(to: CGPoint (x: 163, y: 255))
+        door.addLine(to: CGPoint (x: 163, y: 235))
+        door.addLine(to: CGPoint (x: 175.5, y: 222.5))
+        door.addLine(to: CGPoint (x: 188, y: 235))
+        door.addLine(to: CGPoint (x: 188, y: 255))
         
+        door.stroke()
     }
 }
