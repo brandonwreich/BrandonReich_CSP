@@ -411,6 +411,7 @@ class DrawingView: UIView
     
     public func sandCastleBasesAndTowers() ->Void
     {
+        topCenterTower()
         bigTower()
         bigBase()
         leftTower()
@@ -584,19 +585,89 @@ class DrawingView: UIView
         tower.lineWidth = 2.5
         
         //Base
-        tower.move(to: CGPoint (x: 115, y: 255))
-        tower.addLine(to: CGPoint (x: 115, y: 200))
-        tower.addLine(to: CGPoint (x: 235, y: 200))
-        tower.addLine(to: CGPoint (x: 235, y: 255))
+        tower.move(to: CGPoint (x: 114.5, y: 255))
+        tower.addLine(to: CGPoint (x: 114.5, y: 200))
+        tower.addLine(to: CGPoint (x: 235.5, y: 200))
+        tower.addLine(to: CGPoint (x: 235.5, y: 255))
         
         //Top
-        tower.move(to: CGPoint (x: 115, y: 200))
-        tower.addLine(to: CGPoint (x: 95, y: 190))
- //FIX TOWER -- GO BY 15
-        tower.addLine(to: CGPoint (x: 235, y: 200))
+        tower.move(to: CGPoint (x: 114.5, y: 200))
+        tower.addLine(to: CGPoint (x: 94.5, y: 190))
+        tower.addLine(to: CGPoint (x: 94.5, y: 185))
+        tower.addLine(to: CGPoint (x: 101.5, y: 185))
+        tower.addLine(to: CGPoint (x: 101.5, y: 190))
+        tower.addLine(to: CGPoint (x: 108.5, y: 190))
+        tower.addLine(to: CGPoint (x: 108.5, y: 185))
+        tower.addLine(to: CGPoint (x: 115.5, y: 185))
+        tower.addLine(to: CGPoint (x: 115.5, y: 190))
+        tower.addLine(to: CGPoint (x: 122.5, y: 190))
+        tower.addLine(to: CGPoint (x: 122.5, y: 185))
+        tower.addLine(to: CGPoint (x: 129.5, y: 185))
+        tower.addLine(to: CGPoint (x: 129.5, y: 190))
+        tower.addLine(to: CGPoint (x: 136.5, y: 190))
+        tower.addLine(to: CGPoint (x: 136.5, y: 185))
+        tower.addLine(to: CGPoint (x: 143.5, y: 185))
+        tower.addLine(to: CGPoint (x: 143.5, y: 190))
+        tower.addLine(to: CGPoint (x: 150.5, y: 190))
+        tower.addLine(to: CGPoint (x: 150.5, y: 185))
+        tower.addLine(to: CGPoint (x: 157.5, y: 185))
+        tower.addLine(to: CGPoint (x: 157.5, y: 190))
+        tower.addLine(to: CGPoint (x: 164.5, y: 190))
+        tower.addLine(to: CGPoint (x: 164.5, y: 185))
+        tower.addLine(to: CGPoint (x: 171.5, y: 185))
+        tower.addLine(to: CGPoint (x: 171.5, y: 190))
+        tower.addLine(to: CGPoint (x: 178.5, y: 190))
+        tower.addLine(to: CGPoint (x: 178.5, y: 185))
+        tower.addLine(to: CGPoint (x: 185.5, y: 185))
+        tower.addLine(to: CGPoint (x: 185.5, y: 190))
+        tower.addLine(to: CGPoint (x: 192.5, y: 190))
+        tower.addLine(to: CGPoint (x: 192.5, y: 185))
+        tower.addLine(to: CGPoint (x: 199.5, y: 185))
+        tower.addLine(to: CGPoint (x: 199.5, y: 190))
+        tower.addLine(to: CGPoint (x: 206.5, y: 190))
+        tower.addLine(to: CGPoint (x: 206.5, y: 185))
+        tower.addLine(to: CGPoint (x: 213.5, y: 185))
+        tower.addLine(to: CGPoint (x: 213.5, y: 190))
+        tower.addLine(to: CGPoint (x: 220.5, y: 190))
+        tower.addLine(to: CGPoint (x: 220.5, y: 185))
+        tower.addLine(to: CGPoint (x: 227.5, y: 185))
+        tower.addLine(to: CGPoint (x: 227.5, y: 190))
+        tower.addLine(to: CGPoint (x: 234.5, y: 190))
+        tower.addLine(to: CGPoint (x: 234.5, y: 185))
+        tower.addLine(to: CGPoint (x: 241.5, y: 185))
+        tower.addLine(to: CGPoint (x: 241.5, y: 190))
+        tower.addLine(to: CGPoint (x: 248.5, y: 190))
+        tower.addLine(to: CGPoint (x: 248.5, y: 185))
+        tower.addLine(to: CGPoint (x: 255.5, y: 185))
+        tower.addLine(to: CGPoint (x: 255.5, y: 190))
+        tower.addLine(to: CGPoint (x: 235.5, y: 200))
+        
         
         
         tower.fill()
         tower.stroke()
     }
+    
+    public func topCenterTower()
+    {
+        let tower = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+        tower.lineWidth = 2.5
+        
+        tower.move(to: CGPoint (x: 117.5, y: 255))
+        tower.addLine(to: CGPoint (x: 117.5, y: 150))
+        tower.addLine(to: CGPoint (x: 175, y: 110))
+        tower.addLine(to: CGPoint (x: 232.5, y: 150))
+        tower.addLine(to: CGPoint (x: 232.5, y: 255))
+        
+        tower.fill()
+        tower.stroke()
+        
+    }
+    
+    public func topRightTower()
+{
+    let tower = UIBEzierPath()
+    
 }
