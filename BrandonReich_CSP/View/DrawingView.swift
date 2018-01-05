@@ -89,7 +89,7 @@ class DrawingView: UIView
     
     private func drawSnowMan () -> Void
     {
-       let background = UIBezierPath()
+        let background = UIBezierPath()
         UIColor(patternImage: UIImage(named: "snowflake")!).setFill()
         
         background.move(to: CGPoint (x: 0, y: 0))
@@ -135,7 +135,7 @@ class DrawingView: UIView
         body.fill()
         body.stroke()
         
-    //EYES
+        //EYES
         let eyes = UIBezierPath()
         UIColor.black.setFill()
         UIColor.black.setStroke()
@@ -160,7 +160,7 @@ class DrawingView: UIView
         eyes.fill()
         eyes.stroke()
         
-    //NOSE
+        //NOSE
         let nose = UIBezierPath()
         UIColor.orange.setFill()
         UIColor.orange.setStroke()
@@ -174,7 +174,7 @@ class DrawingView: UIView
         nose.fill()
         nose.stroke()
         
-    //MOUTH
+        //MOUTH
         let mouth = UIBezierPath()
         UIColor.black.setFill()
         UIColor.black.setStroke()
@@ -227,7 +227,7 @@ class DrawingView: UIView
         mouth.fill()
         mouth.stroke()
         
-    //BUTTONS
+        //BUTTONS
         let buttons = UIBezierPath()
         UIColor.black.setFill()
         UIColor.black.setStroke()
@@ -261,7 +261,7 @@ class DrawingView: UIView
         buttons.fill()
         buttons.stroke()
         
-    //ARMS
+        //ARMS
         let arms = UIBezierPath()
         UIColor.brown.setFill()
         UIColor.brown.setStroke()
@@ -278,7 +278,7 @@ class DrawingView: UIView
         arms.fill()
         arms.stroke()
         
-    //FINGERS
+        //FINGERS
         let fingers = UIBezierPath()
         UIColor.brown.setFill()
         UIColor.brown.setStroke()
@@ -307,11 +307,11 @@ class DrawingView: UIView
         //Right arm, right finger
         fingers.move(to: CGPoint (x: 252, y: 152))
         fingers.addLine(to: CGPoint (x: 272, y: 152))
-    
+        
         fingers.fill()
         fingers.stroke()
         
-    //Hat
+        //Hat
         let hat = UIBezierPath()
         UIColor.black.setFill()
         UIColor.black.setStroke()
@@ -351,7 +351,7 @@ class DrawingView: UIView
         
         background.fill()
         background.stroke()
-    
+        
         let boards = UIBezierPath()
         UIColor.brown.setFill()
         UIColor.black.setStroke()
@@ -389,7 +389,7 @@ class DrawingView: UIView
         sand.addLine(to: CGPoint (x: 75, y: 225))
         sand.addLine(to: CGPoint (x: 50, y: 300))
         sand.addLine(to: CGPoint (x: 300, y: 300))
-
+        
         sand.stroke()
         sand.fill()
         
@@ -406,17 +406,19 @@ class DrawingView: UIView
         
         boards.stroke()
         boards.fill()
-
+        
     }
     
     public func sandCastleBasesAndTowers() ->Void
     {
         topCenterTower()
         bigTower()
+        topRightTower()
+        topLeftTower()
         bigBase()
-        leftTower()
-        rightTower()
-        towerDetails()
+        bottomLeftTower()
+        bottomRightTower()
+        bottomTowerDetails()
         bigBaseDetails()
     }
     
@@ -426,7 +428,7 @@ class DrawingView: UIView
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
         base.lineWidth = 2.5
-
+        
         base.move(to: CGPoint (x: 100, y: 255))
         base.addLine(to: CGPoint (x: 100, y: 205))
         base.addLine(to: CGPoint (x: 120, y: 205))
@@ -460,13 +462,13 @@ class DrawingView: UIView
         base.stroke()
     }
     
-    public func leftTower() -> Void
+    public func bottomLeftTower() -> Void
     {
         let tower = UIBezierPath()
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
         tower.lineWidth = 2.5
-    
+        
         //Base
         tower.move(to: CGPoint (x: 90, y: 260))
         tower.addLine(to: CGPoint (x: 90, y: 215))
@@ -499,7 +501,7 @@ class DrawingView: UIView
         tower.stroke()
     }
     
-    public func rightTower() -> Void
+    public func bottomRightTower() -> Void
     {
         let tower = UIBezierPath()
         UIColor.black.setStroke()
@@ -537,7 +539,7 @@ class DrawingView: UIView
         tower.stroke()
     }
     
-    public func towerDetails() -> Void
+    public func bottomTowerDetails() -> Void
     {
         let window = UIBezierPath()
         UIColor.black.setStroke()
@@ -558,6 +560,7 @@ class DrawingView: UIView
         window.addLine(to: CGPoint (x: 102, y: 225))
         window.addLine(to: CGPoint (x: 102, y: 230))
         window.addLine(to: CGPoint (x: 98, y:230))
+        
         
         window.stroke()
     }
@@ -583,17 +586,8 @@ class DrawingView: UIView
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
         tower.lineWidth = 2.5
-        
-        //Base
-        tower.move(to: CGPoint (x: 114.5, y: 255))
-        tower.addLine(to: CGPoint (x: 114.5, y: 200))
-        tower.addLine(to: CGPoint (x: 235.5, y: 200))
-        tower.addLine(to: CGPoint (x: 235.5, y: 255))
-        
-        //Top
+    
         tower.move(to: CGPoint (x: 114.5, y: 200))
-        tower.addLine(to: CGPoint (x: 94.5, y: 190))
-        tower.addLine(to: CGPoint (x: 94.5, y: 185))
         tower.addLine(to: CGPoint (x: 101.5, y: 185))
         tower.addLine(to: CGPoint (x: 101.5, y: 190))
         tower.addLine(to: CGPoint (x: 108.5, y: 190))
@@ -638,8 +632,6 @@ class DrawingView: UIView
         tower.addLine(to: CGPoint (x: 241.5, y: 190))
         tower.addLine(to: CGPoint (x: 248.5, y: 190))
         tower.addLine(to: CGPoint (x: 248.5, y: 185))
-        tower.addLine(to: CGPoint (x: 255.5, y: 185))
-        tower.addLine(to: CGPoint (x: 255.5, y: 190))
         tower.addLine(to: CGPoint (x: 235.5, y: 200))
         
         
@@ -661,13 +653,53 @@ class DrawingView: UIView
         tower.addLine(to: CGPoint (x: 232.5, y: 150))
         tower.addLine(to: CGPoint (x: 232.5, y: 255))
         
+        tower.move(to: CGPoint (x: 117.5, y: 145))
+        tower.addLine(to: CGPoint (x: 232.5, y: 145))
+        
         tower.fill()
         tower.stroke()
         
     }
     
     public func topRightTower()
-{
-    let tower = UIBEzierPath()
+    {
+        let tower = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+        tower.lineWidth = 2.5
+        
+        tower.move(to: CGPoint (x: 225.5, y: 255))
+        tower.addLine(to: CGPoint (x: 225.5, y: 120))
+        tower.addLine(to: CGPoint (x: 242.25, y: 90))
+        tower.addLine(to: CGPoint (x: 252, y: 120))
+        tower.addLine(to: CGPoint (x: 252, y: 255))
+        
+        tower.fill()
+        tower.stroke()
+    }
+    
+    public func topLeftTower()
+    {
+        let tower = UIBezierPath()
+        UIColor.black.setStroke()
+        UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
+        tower.lineWidth = 2.5
+        
+        tower.move(to: CGPoint (x: 98, y: 255))
+        tower.addLine(to: CGPoint (x: 98, y: 120))
+        tower.addLine(to: CGPoint (x: 107.75, y: 90))
+        tower.addLine(to: CGPoint (x: 124.5, y: 120))
+        tower.addLine(to: CGPoint (x: 124.5, y: 255))
+        
+        tower.fill()
+        tower.stroke()
+        
+    }
+    
+    public func topTowerDetails()
+    {
+        
+    }
+    
     
 }
