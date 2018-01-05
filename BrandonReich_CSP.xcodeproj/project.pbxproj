@@ -21,6 +21,7 @@
 		0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */; };
 		03871DE91FFFE12C00C57040 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03871DE81FFFE12C00C57040 /* BucketItem.swift */; };
 		03871DEC1FFFE23500C57040 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03871DEB1FFFE23500C57040 /* BucketItemCell.swift */; };
+		03871DEE1FFFE28A00C57040 /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = 03871DED1FFFE28A00C57040 /* bucket.csv */; };
 		038A13961FD99CAD008870B1 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A13951FD99CAD008870B1 /* ArtCell.swift */; };
 		039D46161FE176C9001705BF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D46151FE176C9001705BF /* Utilities.swift */; };
 		039D46181FE176F2001705BF /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 039D46171FE176F2001705BF /* StarField.sks */; };
@@ -59,6 +60,7 @@
 		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		03871DE81FFFE12C00C57040 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		03871DEB1FFFE23500C57040 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		03871DED1FFFE28A00C57040 /* bucket.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket.csv; path = ../../../../../Downloads/bucket.csv; sourceTree = "<group>"; };
 		038A13951FD99CAD008870B1 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		039D46151FE176C9001705BF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		039D46171FE176F2001705BF /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		0370D3A51FA21FA6003DC36B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03871DED1FFFE28A00C57040 /* bucket.csv */,
 				039D46151FE176C9001705BF /* Utilities.swift */,
 				039D46311FE1823C001705BF /* Sounds */,
 				0370D3981FA21F6C003DC36B /* Assets.xcassets */,
@@ -279,6 +282,7 @@
 				0370D3971FA21F6C003DC36B /* Main.storyboard in Resources */,
 				039D46181FE176F2001705BF /* StarField.sks in Resources */,
 				039D46351FE1888C001705BF /* laser sound.mp3 in Resources */,
+				03871DEE1FFFE28A00C57040 /* bucket.csv in Resources */,
 				039D46341FE1888C001705BF /* invader sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
