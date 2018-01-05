@@ -31,6 +31,7 @@ public class InternetMasterViewController: UITableViewController
         //TODO: Replace with address
         addresses = [
             
+            "https://cnn.com",
             "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
             "https://ctec.canyonsdistrict.org/",
             "https://www.canyonsdistrict.org/",

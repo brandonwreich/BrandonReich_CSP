@@ -17,14 +17,14 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
     private lazy var artSelection : [UIImage?] =
     {
         return [
-            UIImage(named: "myArt"),
-            UIImage(named: "JavaHaikú"),
+            UIImage(named: "MyArt"),
+            UIImage(named: "JavaHaiku"),
             UIImage(named: "CodeSnowman"),
-            UIImage(named: "myArt"),
-            UIImage(named: "JavaHaikú"),
+            UIImage(named: "MyArt"),
+            UIImage(named: "JavaHaiku"),
             UIImage(named: "CodeSnowman"),
-            UIImage(named: "myArt"),
-            UIImage(named: "JavaHaikú"),
+            UIImage(named: "MyArt"),
+            UIImage(named: "JavaHaiku"),
             UIImage(named: "CodeSnowman")
         ]
     }()
@@ -80,7 +80,7 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
         
         artCell.backgroundColor = .white
         artCell.imageView.image = artSelection[indexPath.row]
-        artCell.imageName.text = "My Art"
+        artCell.imageName.text = "My art"
         
         return artCell
     }
