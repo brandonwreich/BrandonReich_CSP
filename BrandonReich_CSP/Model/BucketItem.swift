@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BucketItem
+class BucketItem: UITableViewCell
 {
     let itemContents : String
     let itemAuthor : String

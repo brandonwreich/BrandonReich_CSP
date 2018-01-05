@@ -20,6 +20,7 @@
 		0370D3B21FA2237B003DC36B /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */; };
 		0370D3B41FA22387003DC36B /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */; };
 		03871DE91FFFE12C00C57040 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03871DE81FFFE12C00C57040 /* BucketItem.swift */; };
+		03871DEC1FFFE23500C57040 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03871DEB1FFFE23500C57040 /* BucketItemCell.swift */; };
 		038A13961FD99CAD008870B1 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A13951FD99CAD008870B1 /* ArtCell.swift */; };
 		039D46161FE176C9001705BF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D46151FE176C9001705BF /* Utilities.swift */; };
 		039D46181FE176F2001705BF /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 039D46171FE176F2001705BF /* StarField.sks */; };
@@ -57,6 +58,7 @@
 		0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		0370D3B31FA22387003DC36B /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		03871DE81FFFE12C00C57040 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		03871DEB1FFFE23500C57040 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
 		038A13951FD99CAD008870B1 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		039D46151FE176C9001705BF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		039D46171FE176F2001705BF /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
@@ -127,8 +129,7 @@
 				0370D3A71FA22312003DC36B /* CreativityViewController.swift */,
 				038A13951FD99CAD008870B1 /* ArtCell.swift */,
 				0370D3A91FA22333003DC36B /* AbstractionViewController.swift */,
-				03871DE81FFFE12C00C57040 /* BucketItem.swift */,
-				0370D3AB1FA22348003DC36B /* DataAndInformationViewController.swift */,
+				03871DEA1FFFE1FA00C57040 /* DataView */,
 				0370D3AD1FA2235D003DC36B /* AlgorithmsViewController.swift */,
 				0370D3AF1FA2236C003DC36B /* ProgrammingViewController.swift */,
 				0370D3B11FA2237B003DC36B /* InternetMasterViewController.swift */,
@@ -162,6 +163,7 @@
 		0370D3A61FA21FB6003DC36B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				03871DE81FFFE12C00C57040 /* BucketItem.swift */,
 				039D461B1FE17779001705BF /* Invader.swift */,
 				039D461A1FE17779001705BF /* InvaderLaser.swift */,
 				039D46191FE17779001705BF /* Player.swift */,
@@ -169,6 +171,15 @@
 				039D461C1FE17779001705BF /* Projectile.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		03871DEA1FFFE1FA00C57040 /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				0370D3AB1FA22348003DC36B /* DataAndInformationViewController.swift */,
+				03871DEB1FFFE23500C57040 /* BucketItemCell.swift */,
+			);
+			path = DataView;
 			sourceTree = "<group>";
 		};
 		039D462B1FE18211001705BF /* Game Controller */ = {
@@ -291,6 +302,7 @@
 				0370D3921FA21F6C003DC36B /* AppDelegate.swift in Sources */,
 				0370D3A81FA22312003DC36B /* CreativityViewController.swift in Sources */,
 				039D46231FE17779001705BF /* PlayerLaser.swift in Sources */,
+				03871DEC1FFFE23500C57040 /* BucketItemCell.swift in Sources */,
 				03F982831FCF060D00C068C0 /* InternetDetailViewController.swift in Sources */,
 				039D46221FE17779001705BF /* Projectile.swift in Sources */,
 				036B5A191FD6EFBA00F188BC /* DrawingView.swift in Sources */,
