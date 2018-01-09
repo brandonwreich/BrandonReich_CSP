@@ -522,6 +522,11 @@
                                         <constraint firstItem="UIb-Hx-vdb" firstAttribute="leading" secondItem="50U-lz-Zf8" secondAttribute="trailing" constant="20" id="bKw-w9-18K"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="vuX-J0-kEo" id="BXq-ZO-7F2"/>
+                                    <outlet property="bucketItemSymbol" destination="50U-lz-Zf8" id="EGm-QG-rQH"/>
+                                    <outlet property="bucketItemText" destination="UIb-Hx-vdb" id="csQ-4q-9hM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -532,7 +537,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofh-hv-xMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202.40000000000001" y="152.47376311844079"/>
+            <point key="canvasLocation" x="-238" y="224"/>
         </scene>
         <!--Abstraction View Controller-->
         <scene sceneID="43L-qn-mLq">
