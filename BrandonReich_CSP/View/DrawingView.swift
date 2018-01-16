@@ -444,20 +444,34 @@ class DrawingView: UIView
         
         //Base
         tower.move(to: CGPoint (x: 118, y: 275))
-        tower.addLine(to: CGPoint (x: 118, y: 242.5))
-        tower.addLine(to: CGPoint (x: 132, y: 242.5))
+        tower.addLine(to: CGPoint (x: 118, y: 242))
+        tower.addLine(to: CGPoint (x: 132, y: 242))
         tower.addLine(to: CGPoint (x: 132, y: 275))
         
         //Top
-        tower.addLine(to: CGPoint (x: 118, y: 242.5))
-        tower.addLine(to: CGPoint (x: 108, y: 237.5))
-        var x = 108
-        var y = 237.5
-        
-        while (x <= 122)
+        tower.addLine(to: CGPoint (x: 118, y: 242))
+        tower.addLine(to: CGPoint (x: 108, y: 237))
+        var x: Int = 108
+        var y: Int = 237
+
+        while(x <= 142)
         {
-            
-            
+            if (y == 237)
+            {
+                tower.addLine(to: CGPoint (x: x + 5, y: y))
+                tower.addLine(to: CGPoint (x: x + 5, y: y + 5))
+                
+                x = x + 5
+                y = y - 5
+            }
+            else if (y == 242)
+            {
+                tower.addLine(to: CGPoint (x: x + 5, y: y))
+                tower.addLine(to: CGPoint (x: x + 5, y: y - 5))
+                
+                x = x + 5
+                y = y - 5
+            }
         }
         
         

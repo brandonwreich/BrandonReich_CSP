@@ -254,7 +254,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="PTu-8L-b9p" kind="show" id="1Mb-Mo-dLQ"/>
+                                    <segue destination="PTu-8L-b9p" kind="show" id="5wk-PW-ioa"/>
                                 </connections>
                             </button>
                         </subviews>
