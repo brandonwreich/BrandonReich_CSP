@@ -64,7 +64,7 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
     }
     
     //MARK:- UICollectionView methods
-    override public func numberOfSections(in colltionView: UICollectionView) -> Int
+    override public func numberOfSections(in collectionView: UICollectionView) -> Int
     {
         return 1
     }
@@ -111,7 +111,7 @@ public class CreativityViewController: UICollectionViewController, UICollectionV
         return sectionInsets
     }
     
-    public func collectionView(_ collectionView: UICollectionView, layout colectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section :Int) -> CGFloat
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section :Int) -> CGFloat
     {
         return sectionInsets.left
     }
