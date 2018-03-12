@@ -160,7 +160,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         setupPlayer()
         invokeInvaderFire()
         setupAccelerometer()
-        
     }
     
     //Handles the firing
@@ -278,4 +277,3 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         }
     }
 }
-

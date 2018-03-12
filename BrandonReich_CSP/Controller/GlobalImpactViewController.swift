@@ -21,7 +21,6 @@ public class GlobalImpactViewController: UIViewController
     @IBAction func changePicture(_ sender: UIButton)
     {
         switchImage()
-        
     }
     
     private func placeImage() -> Void
@@ -70,9 +69,5 @@ public class GlobalImpactViewController: UIViewController
         fillDataPlanLabel()
         fillNeedToAddressLabel()
         fillPersonalConnectionLabel()
-        
-        
-        // Do any additional setup after loading the view.
-    
     }
 }

@@ -262,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="-891.00449775112452"/>
+            <point key="canvasLocation" x="692" y="-844"/>
         </scene>
         <!--Creativity View Controller-->
         <scene sceneID="UwF-hJ-aLj">
@@ -351,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wg-9F-fZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="-844"/>
+            <point key="canvasLocation" x="1929" y="156"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="BFW-Zh-GRn">
@@ -399,7 +399,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afo-x6-b8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="-845"/>
+            <point key="canvasLocation" x="2106" y="-787"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="5N2-Tt-Lwc">
@@ -412,7 +412,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpk-sR-Y6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="-845.1274362818591"/>
+            <point key="canvasLocation" x="2186" y="-786"/>
         </scene>
         <!--Algorithms View Controller-->
         <scene sceneID="0NR-Vk-NB9">
@@ -671,7 +671,7 @@
         <image name="objectCode" width="550" height="508"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UYN-on-tz8"/>
-        <segue reference="RVn-Nb-35p"/>
+        <segue reference="Pq8-Ex-9Ba"/>
+        <segue reference="bZt-EH-lyp"/>
     </inferredMetricsTieBreakers>
 </document>

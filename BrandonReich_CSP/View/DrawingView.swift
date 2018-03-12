@@ -406,7 +406,6 @@ class DrawingView: UIView
         
         boards.stroke()
         boards.fill()
-        
     }
     
     public func sandCastleBasesAndTowers() ->Void
@@ -474,7 +473,6 @@ class DrawingView: UIView
             }
         }
         
-        
         tower.fill()
         tower.stroke()
     }
@@ -494,7 +492,6 @@ class DrawingView: UIView
         
         //Top
 
-        
         tower.fill()
         tower.stroke()
     }
@@ -506,10 +503,8 @@ class DrawingView: UIView
         window.lineWidth = 2.0
         
         //Right tower window
-
         
         //Left tower window
-
         
         window.stroke()
     }
@@ -535,10 +530,6 @@ class DrawingView: UIView
         UIColor.black.setStroke()
         UIColor(red: 1.00, green: 0.78, blue: 0.56, alpha: 1.0).setFill()
         tower.lineWidth = 2.5
-    
-
-        
-        
         
         tower.fill()
         tower.stroke()

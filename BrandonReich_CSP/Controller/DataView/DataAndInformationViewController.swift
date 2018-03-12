@@ -46,7 +46,7 @@ class DataAndInformationViewController: UITableViewController
     return 1
     }
     
-    override public func tableView(_ tabelView: UITableView, numberOfRowsInSection ssection: Int) -> Int
+    override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return bucketList.count
     }
@@ -63,7 +63,5 @@ class DataAndInformationViewController: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }

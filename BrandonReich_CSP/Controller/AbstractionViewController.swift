@@ -42,12 +42,6 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         }
     }
     
-    override public func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     //MARK:- Required Protocol methods for the UIPageViewControllerDataSource
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {

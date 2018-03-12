@@ -71,9 +71,4 @@ public class InternetDetailViewController : UIViewController
         super.viewDidLoad()
         configureDetailView()
     }
-    
-    private func setup()-> Void
-    {
-        
-    }
 }

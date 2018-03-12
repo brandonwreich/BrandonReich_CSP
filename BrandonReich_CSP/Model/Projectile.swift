@@ -11,7 +11,6 @@ import SpriteKit
 
 public class Projectile: SKSpriteNode
 {
-
     init(imageName: String, bulletSound: String?)
     {
         let texture = SKTexture(imageNamed: imageName)
