@@ -11,24 +11,24 @@ import UIKit
 public class AlgorithmsViewController: UIViewController
 {
     // MARK: Data members
-    @IBOutlet weak var algorithmText: UILabel!
+    @IBOutlet weak var algorithmText : UILabel!
     
     private func setupAlgorithm() -> Void
     {
         var algorithmSteps : [String] = []
         
         //TODO: Deine alogorithm and all steps
-        let algorithm :String = "These are the instructions to create a project in Java using Eclipse and GitHub \n"
-        let stepOne :String = "First, open Eclipse IED and select your workspace."
-        let stepTwo :String = "Second, Select File  New > Java Project on the menu bar, name the project, and click 'Finish'. Then create packages and Classes and enter the start methods into the Runner and Controller classes."
-        let stepThree :String =  "Next, open GitHub Desktop."
-        let stepFour :String = "Select File > New Repository on the menu bar"
-        let stepFive :String = "Type in your Java Project name EXACTLY into the repository name and click 'Create Repository'."
-        let stepSix :String = "Undo the intial commit and then select Repository > Repository Settings on the menu bar."
-        let stepSeven: String = "Edit the Ignored Files and enter 'bin', '*.class', and '.DS_Store' then click 'Save'. "
-        let stepEight :String = "Commit what you just did and click 'Commit to Master'."
-        let stepNine :String = "Click 'Publish Repository' and make sure the 'Keep this code private' check box is UNchecked."
-        let stepTen :String = "Click 'Publish Repository'."
+        let algorithm : String = "These are the instructions to create a project in Java using Eclipse and GitHub \n"
+        let stepOne : String = "First, open Eclipse IED and select your workspace."
+        let stepTwo : String = "Second, Select File  New > Java Project on the menu bar, name the project, and click 'Finish'. Then create packages and Classes and enter the start methods into the Runner and Controller classes."
+        let stepThree : String =  "Next, open GitHub Desktop."
+        let stepFour : String = "Select File > New Repository on the menu bar"
+        let stepFive : String = "Type in your Java Project name EXACTLY into the repository name and click 'Create Repository'."
+        let stepSix : String = "Undo the intial commit and then select Repository > Repository Settings on the menu bar."
+        let stepSeven : String = "Edit the Ignored Files and enter 'bin', '*.class', and '.DS_Store' then click 'Save'. "
+        let stepEight : String = "Commit what you just did and click 'Commit to Master'."
+        let stepNine : String = "Click 'Publish Repository' and make sure the 'Keep this code private' check box is UNchecked."
+        let stepTen : String = "Click 'Publish Repository'."
         
         algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix, stepSeven, stepEight, stepNine, stepTen]
         
